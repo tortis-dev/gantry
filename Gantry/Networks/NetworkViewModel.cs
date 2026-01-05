@@ -17,7 +17,7 @@ class NetworkViewModel : ObservableObject
 
     async Task LoadNetworkList()
     {
-        using var client = new DockerClientFactory().Create();
+        var client = new DockerClientFactory().Create();
         var networkList = await client.Networks.ListNetworksAsync(new NetworksListParameters());
 
         foreach (var network in networkList)
@@ -58,7 +58,7 @@ class RemoveNetworkCommand : ICommand
     {
         try
         {
-            using var client = new DockerClientFactory().Create();
+            var client = new DockerClientFactory().Create();
             await client.Networks.DeleteNetworkAsync(id);
         }
         catch (Exception e)
