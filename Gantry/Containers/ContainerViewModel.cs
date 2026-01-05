@@ -13,9 +13,11 @@ namespace Gantry.Containers;
 
 class ContainerViewModel : ObservableObject
 {
+    private const int MaxLogLines = 10000;
     private ContainerListItem? _selectedContainer;
     private string _logs = string.Empty;
     private CancellationTokenSource? _logStreamCts;
+    private List<string> _logLines = [];
 
     public ContainerViewModel()
     {
@@ -86,6 +88,7 @@ class ContainerViewModel : ObservableObject
         _logStreamCts?.Dispose();
 
         Logs = string.Empty;
+        _logLines.Clear();
 
         if (SelectedContainer == null)
             return;
@@ -106,7 +109,7 @@ class ContainerViewModel : ObservableObject
 
             var stream = await client.Containers.GetContainerLogsAsync(containerId, false, logParams, _logStreamCts.Token);
             var buffer = new byte[4096];
-            var logBuilder = new StringBuilder();
+            var partialLine = new StringBuilder();
 
             while (!_logStreamCts.Token.IsCancellationRequested)
             {
@@ -115,8 +118,34 @@ class ContainerViewModel : ObservableObject
                     break;
 
                 var text = Encoding.UTF8.GetString(buffer, 0, result.Count);
-                logBuilder.Append(text);
-                Logs = logBuilder.ToString();
+                partialLine.Append(text);
+
+                // Process complete lines
+                var currentText = partialLine.ToString();
+                var lines = currentText.Split('\n');
+
+                // Last element might be incomplete, keep it in partialLine
+                for (int i = 0; i < lines.Length - 1; i++)
+                {
+                    _logLines.Add(lines[i]);
+                }
+
+                // Keep the last incomplete line in the buffer
+                partialLine.Clear();
+                partialLine.Append(lines[^1]);
+
+                // Trim to last MaxLogLines
+                if (_logLines.Count > MaxLogLines)
+                {
+                    _logLines.RemoveRange(0, _logLines.Count - MaxLogLines);
+                }
+
+                // Update the display
+                Logs = string.Join('\n', _logLines);
+                if (partialLine.Length > 0)
+                {
+                    Logs += partialLine.ToString();
+                }
             }
         }
         catch (OperationCanceledException)
@@ -131,6 +160,7 @@ class ContainerViewModel : ObservableObject
 
     public void ClearLogs()
     {
+        _logLines.Clear();
         Logs = string.Empty;
     }
 }
