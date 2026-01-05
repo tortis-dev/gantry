@@ -20,7 +20,7 @@ class ImageViewModel : ObservableObject
 
     async Task LoadImageList()
     {
-        using var client = new DockerClientFactory().Create();
+        var client = new DockerClientFactory().Create();
         var imageList = await client.Images.ListImagesAsync(new ImagesListParameters());
         var containerList = await client.Containers.ListContainersAsync(new ContainersListParameters {All = true});
         foreach (var image in imageList)
@@ -55,7 +55,7 @@ class RemoveImageCommand : ICommand
     {
         try
         {
-            using var client = new DockerClientFactory().Create();
+            var client = new DockerClientFactory().Create();
             await client.Images.DeleteImageAsync(id, new ImageDeleteParameters());
         }
         catch (Exception e)

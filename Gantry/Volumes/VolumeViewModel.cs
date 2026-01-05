@@ -16,7 +16,7 @@ class VolumeViewModel : ObservableObject
 
     async Task LoadVolumeList()
     {
-        using var client = new DockerClientFactory().Create();
+        var client = new DockerClientFactory().Create();
         var volumeList = await client.Volumes.ListAsync();
 
         foreach (var volume in volumeList.Volumes)

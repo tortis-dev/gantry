@@ -12,7 +12,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
     <StackPanel Grid.Row="0">
@@ -20,6 +20,7 @@
         <DataGrid x:Name="Grid"
                   SelectionMode="Single"
                   SelectionChanged="Grid_OnSelectionChanged"
+                  SelectedItem="{Binding SelectedContainer}"
                   ItemsSource="{Binding Containers}" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding ShortId}" CanUserSort="False"/>
@@ -57,9 +58,29 @@
     </StackPanel>
         <GridSplitter Grid.Row="1" Background="DarkGray"></GridSplitter>
         <TabControl Grid.Row="2" >
-            <TabItem Header="Log"></TabItem>
-            <TabItem Header="Inspect"></TabItem>
-            <TabItem Header="Shell"></TabItem>
+            <TabItem Header="Log">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        <Button Content="Clear" Command="{Binding ClearLogsCommand}" Padding="10,5" />
+                    </StackPanel>
+
+                    <TextBox Grid.Row="1"
+                             Margin="5"
+                             Text="{Binding Logs}"
+                             IsReadOnly="True"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"
+                             FontFamily="Consolas,Courier New,monospace"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </UserControl>
