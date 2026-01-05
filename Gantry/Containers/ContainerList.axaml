@@ -81,8 +81,6 @@
                              ScrollViewer.VerticalScrollBarVisibility="Auto" />
                 </Grid>
             </TabItem>
-            <TabItem Header="Inspect"></TabItem>
-            <TabItem Header="Shell"></TabItem>
         </TabControl>
     </Grid>
 </UserControl>
