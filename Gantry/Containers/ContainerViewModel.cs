@@ -2,7 +2,6 @@ using Docker.DotNet.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -96,65 +95,75 @@ class ContainerViewModel : ObservableObject
         _logStreamCts = new CancellationTokenSource();
         var containerId = SelectedContainer.Id;
 
-        try
+        var client = new DockerClientFactory().Create();
+        var logParams = new ContainerLogsParameters
         {
-            var client = new DockerClientFactory().Create();
-            var logParams = new ContainerLogsParameters
+            ShowStdout = true, ShowStderr = true, Follow = true, Timestamps = true
+        };
+
+        while (!_logStreamCts.Token.IsCancellationRequested)
+        {
+            try
             {
-                ShowStdout = true,
-                ShowStderr = true,
-                Follow = true,
-                Timestamps = true
-            };
+                await Task.Delay(100, _logStreamCts.Token);
 
-            var stream = await client.Containers.GetContainerLogsAsync(containerId, false, logParams, _logStreamCts.Token);
-            var buffer = new byte[4096];
-            var partialLine = new StringBuilder();
+                var stream =
+                    await client.Containers.GetContainerLogsAsync(containerId, false, logParams, _logStreamCts.Token);
 
-            while (!_logStreamCts.Token.IsCancellationRequested)
-            {
-                var result = await stream.ReadOutputAsync(buffer, 0, buffer.Length, _logStreamCts.Token);
-                if (result.EOF)
-                    break;
+                if (stream is null)
+                    continue;
 
-                var text = Encoding.UTF8.GetString(buffer, 0, result.Count);
-                partialLine.Append(text);
+                var buffer = new byte[4096];
+                var partialLine = new StringBuilder();
 
-                // Process complete lines
-                var currentText = partialLine.ToString();
-                var lines = currentText.Split('\n');
-
-                // Last element might be incomplete, keep it in partialLine
-                for (int i = 0; i < lines.Length - 1; i++)
+                while (!_logStreamCts.Token.IsCancellationRequested)
                 {
-                    _logLines.Add(lines[i]);
-                }
+                    var result = await stream.ReadOutputAsync(buffer, 0, buffer.Length, _logStreamCts.Token);
+                    if (result.EOF)
+                    {
+                        logParams.Since = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+                        break;
+                    }
 
-                // Keep the last incomplete line in the buffer
-                partialLine.Clear();
-                partialLine.Append(lines[^1]);
+                    var text = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                    partialLine.Append(text);
 
-                // Trim to last MaxLogLines
-                if (_logLines.Count > MaxLogLines)
-                {
-                    _logLines.RemoveRange(0, _logLines.Count - MaxLogLines);
-                }
+                    // Process complete lines
+                    var currentText = partialLine.ToString();
+                    var lines = currentText.Split('\n');
 
-                // Update the display
-                Logs = string.Join('\n', _logLines);
-                if (partialLine.Length > 0)
-                {
-                    Logs += partialLine.ToString();
+                    // Last element might be incomplete, keep it in partialLine
+                    for (int i = 0; i < lines.Length - 1; i++)
+                    {
+                        _logLines.Add(lines[i]);
+                    }
+
+                    // Keep the last incomplete line in the buffer
+                    partialLine.Clear();
+                    partialLine.Append(lines[^1]);
+
+                    // Trim to last MaxLogLines
+                    if (_logLines.Count > MaxLogLines)
+                    {
+                        _logLines.RemoveRange(0, _logLines.Count - MaxLogLines);
+                    }
+
+                    // Update the display
+                    Logs = string.Join('\n', _logLines);
+                    if (partialLine.Length > 0)
+                    {
+                        Logs += partialLine.ToString();
+                    }
                 }
             }
-        }
-        catch (OperationCanceledException)
-        {
-            // Expected when canceling the stream
-        }
-        catch (Exception e)
-        {
-            Logs += $"\n\nError streaming logs: {e.Message}";
+            catch (OperationCanceledException)
+            {
+                // Expected when canceling the stream
+            }
+            catch (Exception e)
+            {
+                Logs += $"\n\nError streaming logs: {e.Message}";
+            }
         }
     }
 
