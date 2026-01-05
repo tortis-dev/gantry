@@ -1,3 +1,4 @@
+using Docker.DotNet;
 using Docker.DotNet.Models;
 using System;
 using System.Collections.Generic;
@@ -103,11 +104,13 @@ class ContainerViewModel : ObservableObject
 
         while (!_logStreamCts.Token.IsCancellationRequested)
         {
+            MultiplexedStream? stream = null;
+
             try
             {
                 await Task.Delay(100, _logStreamCts.Token);
 
-                var stream =
+                stream =
                     await client.Containers.GetContainerLogsAsync(containerId, false, logParams, _logStreamCts.Token);
 
                 if (stream is null)
@@ -163,6 +166,11 @@ class ContainerViewModel : ObservableObject
             catch (Exception e)
             {
                 Logs += $"\n\nError streaming logs: {e.Message}";
+            }
+            finally
+            {
+                stream?.Dispose();
+                stream = null;
             }
         }
     }
