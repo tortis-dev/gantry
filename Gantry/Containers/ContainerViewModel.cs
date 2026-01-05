@@ -2,7 +2,10 @@ using Docker.DotNet.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -10,15 +13,38 @@ namespace Gantry.Containers;
 
 class ContainerViewModel : ObservableObject
 {
+    private ContainerListItem? _selectedContainer;
+    private string _logs = string.Empty;
+    private CancellationTokenSource? _logStreamCts;
+
     public ContainerViewModel()
     {
         StartContainerCommand = new(this);
         StopContainerCommand = new(this);
         RemoveContainerCommand = new(this);
+        ClearLogsCommand = new(this);
 
         _ = LoadContainerList();
     }
     public ObservableCollection<ContainerListItem> Containers { get; } = [];
+
+    public ContainerListItem? SelectedContainer
+    {
+        get => _selectedContainer;
+        set
+        {
+            if (SetField(ref _selectedContainer, value))
+            {
+                _ = StartLogStream();
+            }
+        }
+    }
+
+    public string Logs
+    {
+        get => _logs;
+        set => SetField(ref _logs, value);
+    }
 
     async Task LoadContainerList()
     {
@@ -44,12 +70,68 @@ class ContainerViewModel : ObservableObject
     public StopContainerCommand StopContainerCommand { get; }
     public StartContainerCommand StartContainerCommand { get; }
     public RemoveContainerCommand RemoveContainerCommand { get; }
+    public ClearLogsCommand ClearLogsCommand { get; }
 
     public void ContainerStateChanged(ContainerListItem container)
     {
         StopContainerCommand.RaiseCanExecuteChanged();
         StartContainerCommand.RaiseCanExecuteChanged();
         RemoveContainerCommand.RaiseCanExecuteChanged();
+    }
+
+    async Task StartLogStream()
+    {
+        // Cancel any existing stream
+        _logStreamCts?.Cancel();
+        _logStreamCts?.Dispose();
+
+        Logs = string.Empty;
+
+        if (SelectedContainer == null)
+            return;
+
+        _logStreamCts = new CancellationTokenSource();
+        var containerId = SelectedContainer.Id;
+
+        try
+        {
+            using var client = new DockerClientFactory().Create();
+            var logParams = new ContainerLogsParameters
+            {
+                ShowStdout = true,
+                ShowStderr = true,
+                Follow = true,
+                Timestamps = true
+            };
+
+            var stream = await client.Containers.GetContainerLogsAsync(containerId, false, logParams, _logStreamCts.Token);
+            var buffer = new byte[4096];
+            var logBuilder = new StringBuilder();
+
+            while (!_logStreamCts.Token.IsCancellationRequested)
+            {
+                var result = await stream.ReadOutputAsync(buffer, 0, buffer.Length, _logStreamCts.Token);
+                if (result.EOF)
+                    break;
+
+                var text = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                logBuilder.Append(text);
+                Logs = logBuilder.ToString();
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            // Expected when canceling the stream
+        }
+        catch (Exception e)
+        {
+            Logs += $"\n\nError streaming logs: {e.Message}";
+        }
+    }
+
+    public void ClearLogs()
+    {
+        Logs = string.Empty;
     }
 }
 
@@ -201,5 +283,27 @@ class RemoveContainerCommand : ICommand
             Console.WriteLine(e);
         }
     }
+}
+
+class ClearLogsCommand : ICommand
+{
+    private ContainerViewModel _viewModel;
+
+    public ClearLogsCommand(ContainerViewModel viewModel)
+    {
+        _viewModel = viewModel;
+    }
+
+    public bool CanExecute(object? parameter)
+    {
+        return true;
+    }
+
+    public void Execute(object? parameter)
+    {
+        _viewModel.ClearLogs();
+    }
+
+    public event EventHandler? CanExecuteChanged;
 }
 
