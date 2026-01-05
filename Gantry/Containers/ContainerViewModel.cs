@@ -98,7 +98,7 @@ class ContainerViewModel : ObservableObject
         var client = new DockerClientFactory().Create();
         var logParams = new ContainerLogsParameters
         {
-            ShowStdout = true, ShowStderr = true, Follow = true, Timestamps = true
+            ShowStdout = true, ShowStderr = true, Follow = true, Timestamps = true, Tail = "10000"
         };
 
         while (!_logStreamCts.Token.IsCancellationRequested)
