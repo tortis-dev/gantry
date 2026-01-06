@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Gantry 
+Type=Application
+Exec=/usr/local/bin/gantry/Gantry
+Icon=/usr/local/bin/gantry/gantry.png
+Comment=Docker Management UI
+Categories=Utility
+Terminal=false

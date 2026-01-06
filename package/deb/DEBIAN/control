@@ -1,0 +1,5 @@
+Package: gantry
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Jason Penniman
+Description: A desktop UI for managing docker containers.
