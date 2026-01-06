@@ -8,18 +8,18 @@
         <version>0.24.0+7063553f83d0e4856bb510baf801339ca54ebc47</version>
       </tool>
     </tools>
-    <component type="application" bom-ref="Unknown">
-      <name>Unknown</name>
-      <version>0.0.0</version>
-      <purl>Unknown</purl>
+    <component type="application" bom-ref="Gantry">
+      <name>Gantry</name>
+      <version>1.0.0</version>
+      <purl>Gantry</purl>
       <properties>
         <property name="root">true</property>
       </properties>
     </component>
     <properties>
-      <property name="timestamp">2026-01-06T19:08:16.2567358Z</property>
-      <property name="components">37</property>
-      <property name="dependencies">38</property>
+      <property name="timestamp">2026-01-06T19:37:07.9604578Z</property>
+      <property name="components">36</property>
+      <property name="dependencies">19</property>
       <property name="groups">Gantry.sln</property>
     </properties>
   </metadata>
@@ -525,14 +525,6 @@
       </licenses>
       <purl>pkg:nuget/Tmds.DBus.Protocol@0.21.2</purl>
     </component>
-    <component type="application" bom-ref="Unknown">
-      <name>Unknown</name>
-      <version>0.0.0</version>
-      <purl>Unknown</purl>
-      <properties>
-        <property name="root">true</property>
-      </properties>
-    </component>
   </components>
   <dependencies>
     <dependency ref="pkg:nuget/Avalonia@11.3.2">
@@ -615,87 +607,6 @@
     </dependency>
     <dependency ref="pkg:nuget/Tmds.DBus.Protocol@0.21.2">
       <dependency ref="pkg:nuget/System.IO.Pipelines@8.0.0" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia.BuildServices@0.0.31" />
-      <dependency ref="pkg:nuget/Avalonia.Remote.Protocol@11.3.2" />
-      <dependency ref="pkg:nuget/MicroCom.Runtime@0.11.0" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Remote.Protocol@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Controls.DataGrid@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Desktop@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Native@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Skia@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Win32@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.X11@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Native@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Skia@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/HarfBuzzSharp@8.3.1.1" />
-      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Linux@8.3.1.1" />
-      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.WebAssembly@8.3.1.1" />
-      <dependency ref="pkg:nuget/SkiaSharp@2.88.9" />
-      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9" />
-      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.WebAssembly@2.88.9" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Win32@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Angle.Windows.Natives@2.1.25547.20250602" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.X11@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.FreeDesktop@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Skia@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Diagnostics@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2" />
-      <dependency ref="pkg:nuget/Avalonia.Themes.Simple@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Themes.Simple@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Fonts.Inter@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.FreeDesktop@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/Tmds.DBus.Protocol@0.21.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Tmds.DBus.Protocol@0.21.2">
-      <dependency ref="pkg:nuget/System.IO.Pipelines@8.0.0" />
-    </dependency>
-    <dependency ref="pkg:nuget/HarfBuzzSharp@8.3.1.1">
-      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1" />
-      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1" />
-    </dependency>
-    <dependency ref="pkg:nuget/SkiaSharp@2.88.9">
-      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9" />
-      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.macOS@2.88.9" />
-    </dependency>
-    <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9">
-      <dependency ref="pkg:nuget/SkiaSharp@2.88.9" />
-    </dependency>
-    <dependency ref="pkg:nuget/Avalonia.Themes.Fluent@11.3.2">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-    </dependency>
-    <dependency ref="pkg:nuget/Docker.DotNet@3.125.15">
-      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.1" />
-      <dependency ref="pkg:nuget/System.Buffers@4.5.1" />
-      <dependency ref="pkg:nuget/System.Threading.Tasks.Extensions@4.5.4" />
-    </dependency>
-    <dependency ref="pkg:nuget/FluentIcons.Avalonia@1.1.303">
-      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
-      <dependency ref="pkg:nuget/FluentIcons.Common@1.1.303" />
     </dependency>
   </dependencies>
 </bom>

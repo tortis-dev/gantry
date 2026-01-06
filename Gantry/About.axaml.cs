@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using System;
 using System.IO;
 using System.Linq;
 
@@ -18,4 +19,6 @@ public partial class About : Window
     public string License => File.ReadAllText("LICENSE.md");
 
     public string DockerContext => $"Docker Context: {new DockerClientFactory().Create().Configuration.EndpointBaseUri.ToString()}";
+
+    public Uri Sbom => new Uri($"file://{Path.GetFullPath("sbom.html")}");
 }

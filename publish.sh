@@ -6,7 +6,7 @@ dotnet restore || exit 1
 dotnet list package --vulnerable --include-transitive || exit 1
 
 # Generate updated SBOM
-./sbom.sh
+./sbom.sh $version
 
 # Windows
 dotnet publish --no-restore -o dist/win   -c Release -r win-x64   -p Version=$version -p:PublishSingleFile=true --self-contained true || exit 1

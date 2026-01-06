@@ -21,6 +21,7 @@
             <TextBlock FontSize="24" FontWeight="Bold">Gantry</TextBlock>
             <TextBlock Text="{Binding Version}" />
             <TextBlock Text="{Binding DockerContext}" />
+            <HyperlinkButton NavigateUri="{Binding Sbom}">Third Party Components and Licenses</HyperlinkButton>
             <TextBlock>License: GPL-3</TextBlock>
         </StackPanel>
 
