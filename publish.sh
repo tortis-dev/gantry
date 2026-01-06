@@ -6,7 +6,7 @@ dotnet list package --vulnerable --include-transitive || exit 1
 
 # Windows
 dotnet publish --no-restore -o dist/win   -c Release -r win-x64   -p Version=$version -p:PublishSingleFile=true --self-contained true || exit 1
-zip dist/gantry-$version-win-x64.zip dist/win/* || exit 1
+zip dist/gantry-$version-win-x64.zip dist/win/* LICENSE.md gantry.png || exit 1
 
 # Linux
 dotnet publish --no-restore -o dist/linux -c Release -r linux-x64 -p Version=$version -p:PublishSingleFile=true --self-contained true || exit 1
