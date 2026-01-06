@@ -1,12 +1,12 @@
 {
   "Name": "Gantry",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "ToolVendor": "Covenant",
   "ToolVersion": "0.24.0+7063553f83d0e4856bb510baf801339ca54ebc47",
   "Components": [
     {
       "Data": "1.0.0",
-      "UUID": "ea261a7e-ffc2-4fd3-8c0e-99a25242d87f",
+      "UUID": "23a63003-fe8f-4eb4-906c-adbcbccd595a",
       "Purl": "pkg:covenant/dotnet/Gantry@1.0.0",
       "Name": "Gantry",
       "Version": "1.0.0",
@@ -17,7 +17,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "7946ba99-eaa0-48ae-88be-796fbb287365",
+      "UUID": "38d805c1-5791-421a-a76c-ef64e56403dd",
       "Purl": "pkg:nuget/Avalonia@11.3.2",
       "Name": "Avalonia",
       "Version": "11.3.2",
@@ -35,7 +35,7 @@
     },
     {
       "Data": "2.1.25547.20250602",
-      "UUID": "879fa597-af77-4436-a24e-cf2335f6f12e",
+      "UUID": "7f86a9c4-075b-4454-af95-5208b02a5178",
       "Purl": "pkg:nuget/Avalonia.Angle.Windows.Natives@2.1.25547.20250602",
       "Name": "Avalonia.Angle.Windows.Natives",
       "Version": "2.1.25547.20250602",
@@ -57,7 +57,7 @@
     },
     {
       "Data": "0.0.31",
-      "UUID": "85302fa3-4487-4be0-90c2-eaeb023ff810",
+      "UUID": "154a4f1b-1d2c-4e55-a4e3-c4c3658399a6",
       "Purl": "pkg:nuget/Avalonia.BuildServices@0.0.31",
       "Name": "Avalonia.BuildServices",
       "Version": "0.0.31",
@@ -75,7 +75,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "7f7036c1-a82d-462f-a51f-30097a32d203",
+      "UUID": "e35be57a-9ccd-4056-9298-efb39f86453d",
       "Purl": "pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2",
       "Name": "Avalonia.Controls.ColorPicker",
       "Version": "11.3.2",
@@ -93,7 +93,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "2c87a75e-337f-4a0f-8979-2f9321d67991",
+      "UUID": "44a5557d-7bf2-4aa3-91be-5832adc7b863",
       "Purl": "pkg:nuget/Avalonia.Controls.DataGrid@11.3.2",
       "Name": "Avalonia.Controls.DataGrid",
       "Version": "11.3.2",
@@ -111,7 +111,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "7f597283-5315-47c1-89ad-c5d9ff166e3c",
+      "UUID": "b64765fb-cd6a-4e91-873a-863fd3eab12e",
       "Purl": "pkg:nuget/Avalonia.Desktop@11.3.2",
       "Name": "Avalonia.Desktop",
       "Version": "11.3.2",
@@ -129,7 +129,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "9f5639e7-3948-4e77-9b9f-cb8bb822c442",
+      "UUID": "5579e15f-824e-4d84-bcb0-6d13c6fe3aab",
       "Purl": "pkg:nuget/Avalonia.Diagnostics@11.3.2",
       "Name": "Avalonia.Diagnostics",
       "Version": "11.3.2",
@@ -147,7 +147,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "e92c602b-f553-4267-878a-53d4f6d58d2c",
+      "UUID": "fa630707-d22d-40d8-a05e-03fd087b56b2",
       "Purl": "pkg:nuget/Avalonia.Fonts.Inter@11.3.2",
       "Name": "Avalonia.Fonts.Inter",
       "Version": "11.3.2",
@@ -165,7 +165,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "19fabb66-f7d1-4d03-bbc6-dae2210908b1",
+      "UUID": "d2053bd8-eaa9-4c5a-91ab-3ea3fa0768d3",
       "Purl": "pkg:nuget/Avalonia.FreeDesktop@11.3.2",
       "Name": "Avalonia.FreeDesktop",
       "Version": "11.3.2",
@@ -183,7 +183,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "feccf93d-fba0-4733-b027-61fba171969f",
+      "UUID": "1a19058a-9cda-4687-b668-00c340b3e6e2",
       "Purl": "pkg:nuget/Avalonia.Native@11.3.2",
       "Name": "Avalonia.Native",
       "Version": "11.3.2",
@@ -201,7 +201,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "e3a7cfcd-42bd-441d-832c-48759d59c6e4",
+      "UUID": "b4bf9717-3749-4e24-bf17-a0379dde5982",
       "Purl": "pkg:nuget/Avalonia.Remote.Protocol@11.3.2",
       "Name": "Avalonia.Remote.Protocol",
       "Version": "11.3.2",
@@ -219,7 +219,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "a19f1d9a-045f-44f5-9eb5-e5c39e75e0e4",
+      "UUID": "16ecba39-d31a-4083-b330-f9fcce87bef4",
       "Purl": "pkg:nuget/Avalonia.Skia@11.3.2",
       "Name": "Avalonia.Skia",
       "Version": "11.3.2",
@@ -237,7 +237,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "eeaec023-207d-40a8-a748-b869c3f7fce5",
+      "UUID": "64818525-ada1-4209-9ea0-57ea0f91506f",
       "Purl": "pkg:nuget/Avalonia.Themes.Fluent@11.3.2",
       "Name": "Avalonia.Themes.Fluent",
       "Version": "11.3.2",
@@ -255,7 +255,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "07fc59ef-80d5-4bd8-9bd6-47d1032f2b21",
+      "UUID": "b678173f-1ae4-4de6-93ac-078ca3cec51e",
       "Purl": "pkg:nuget/Avalonia.Themes.Simple@11.3.2",
       "Name": "Avalonia.Themes.Simple",
       "Version": "11.3.2",
@@ -273,7 +273,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "5f47a2db-a333-48c2-934f-70691622d6f9",
+      "UUID": "c7659b71-7d1b-4925-b5f8-cc4be18f6525",
       "Purl": "pkg:nuget/Avalonia.Win32@11.3.2",
       "Name": "Avalonia.Win32",
       "Version": "11.3.2",
@@ -291,7 +291,7 @@
     },
     {
       "Data": "11.3.2",
-      "UUID": "a4500ba6-87b5-48e0-b6cd-d38fcd5bcd98",
+      "UUID": "88b41458-f629-4329-a633-95fcd7677b5f",
       "Purl": "pkg:nuget/Avalonia.X11@11.3.2",
       "Name": "Avalonia.X11",
       "Version": "11.3.2",
@@ -309,7 +309,7 @@
     },
     {
       "Data": "3.125.15",
-      "UUID": "d03a557e-9cc2-4e36-b82c-5180b0667001",
+      "UUID": "55d80ab8-7799-4265-b747-59e57d08aec4",
       "Purl": "pkg:nuget/Docker.DotNet@3.125.15",
       "Name": "Docker.DotNet",
       "Version": "3.125.15",
@@ -331,7 +331,7 @@
     },
     {
       "Data": "1.1.303",
-      "UUID": "ab80e492-7887-4a88-b3d7-0fa0064b36ef",
+      "UUID": "eac5631a-71c1-47cb-a46b-db43e6479278",
       "Purl": "pkg:nuget/FluentIcons.Avalonia@1.1.303",
       "Name": "FluentIcons.Avalonia",
       "Version": "1.1.303",
@@ -348,7 +348,7 @@
     },
     {
       "Data": "1.1.303",
-      "UUID": "cab7dc5c-0cec-42fa-a378-bc767df9b740",
+      "UUID": "5f52067c-bcd3-4a63-885f-f0cfb7904a3b",
       "Purl": "pkg:nuget/FluentIcons.Common@1.1.303",
       "Name": "FluentIcons.Common",
       "Version": "1.1.303",
@@ -365,7 +365,7 @@
     },
     {
       "Data": "8.3.1.1",
-      "UUID": "f1ec2de8-3f45-4ddd-a185-78e41aac0b54",
+      "UUID": "c33099b2-9bf2-4118-8f00-f38a10c66ce5",
       "Purl": "pkg:nuget/HarfBuzzSharp@8.3.1.1",
       "Name": "HarfBuzzSharp",
       "Version": "8.3.1.1",
@@ -383,7 +383,7 @@
     },
     {
       "Data": "8.3.1.1",
-      "UUID": "0250e548-194a-404c-a845-3873247f5fb6",
+      "UUID": "c230965e-dd1a-47bf-b59f-6715c221b5e1",
       "Purl": "pkg:nuget/HarfBuzzSharp.NativeAssets.Linux@8.3.1.1",
       "Name": "HarfBuzzSharp.NativeAssets.Linux",
       "Version": "8.3.1.1",
@@ -401,7 +401,7 @@
     },
     {
       "Data": "8.3.1.1",
-      "UUID": "0d23e25d-3836-47dd-9cbd-5ceb1e4cbe78",
+      "UUID": "dd149cc1-4a20-45f3-9434-9a6ce3f68cb9",
       "Purl": "pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1",
       "Name": "HarfBuzzSharp.NativeAssets.macOS",
       "Version": "8.3.1.1",
@@ -419,7 +419,7 @@
     },
     {
       "Data": "8.3.1.1",
-      "UUID": "3aae3b84-0926-4d68-84c2-812c420e7f5c",
+      "UUID": "b4fe91f8-488f-4cc2-8641-323c6d717630",
       "Purl": "pkg:nuget/HarfBuzzSharp.NativeAssets.WebAssembly@8.3.1.1",
       "Name": "HarfBuzzSharp.NativeAssets.WebAssembly",
       "Version": "8.3.1.1",
@@ -437,7 +437,7 @@
     },
     {
       "Data": "8.3.1.1",
-      "UUID": "f3908be4-9f2c-4907-9827-3cd47b115f0b",
+      "UUID": "19307177-f624-4b7b-b00e-a0f3078fd0c4",
       "Purl": "pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1",
       "Name": "HarfBuzzSharp.NativeAssets.Win32",
       "Version": "8.3.1.1",
@@ -455,7 +455,7 @@
     },
     {
       "Data": "0.11.0",
-      "UUID": "3f2ab742-8830-4173-a9dd-bd3fd85bcc2b",
+      "UUID": "c5ffc65d-72ec-44c2-af1d-ae2c0a11b294",
       "Purl": "pkg:nuget/MicroCom.Runtime@0.11.0",
       "Name": "MicroCom.Runtime",
       "Version": "0.11.0",
@@ -473,7 +473,7 @@
     },
     {
       "Data": "13.0.1",
-      "UUID": "2dabdc61-cac0-47a6-80d7-6daa109c63af",
+      "UUID": "dedea082-137e-432f-8d58-04afd404a55b",
       "Purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
       "Name": "Newtonsoft.Json",
       "Version": "13.0.1",
@@ -491,7 +491,7 @@
     },
     {
       "Data": "4.3.0",
-      "UUID": "814aebd6-db5d-4403-80a6-5633b4260d44",
+      "UUID": "b5ba286b-b670-45f2-b19c-c6d014ae5f2d",
       "Purl": "pkg:nuget/Serilog@4.3.0",
       "Name": "Serilog",
       "Version": "4.3.0",
@@ -509,7 +509,7 @@
     },
     {
       "Data": "2.1.0",
-      "UUID": "959487af-a5c7-4601-bc40-e53add480e01",
+      "UUID": "807669aa-b9ff-4517-8d02-37f60f742d9f",
       "Purl": "pkg:nuget/Serilog.Sinks.Async@2.1.0",
       "Name": "Serilog.Sinks.Async",
       "Version": "2.1.0",
@@ -526,7 +526,7 @@
     },
     {
       "Data": "7.0.0",
-      "UUID": "d49f9560-e2fd-43d3-b616-18339f5af44d",
+      "UUID": "69998333-be38-4ee3-b28d-8f382690a184",
       "Purl": "pkg:nuget/Serilog.Sinks.File@7.0.0",
       "Name": "Serilog.Sinks.File",
       "Version": "7.0.0",
@@ -543,7 +543,7 @@
     },
     {
       "Data": "2.88.9",
-      "UUID": "d46fd51e-a870-4d6f-ac00-022b050a1852",
+      "UUID": "bce181ab-9f6e-4f72-9720-d2a8fc86bc27",
       "Purl": "pkg:nuget/SkiaSharp@2.88.9",
       "Name": "SkiaSharp",
       "Version": "2.88.9",
@@ -561,7 +561,7 @@
     },
     {
       "Data": "2.88.9",
-      "UUID": "4dc81806-6bef-46d0-82b3-dd8fabae6254",
+      "UUID": "1445cce0-93d7-4cf6-94e8-34bd5c1e9e03",
       "Purl": "pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9",
       "Name": "SkiaSharp.NativeAssets.Linux",
       "Version": "2.88.9",
@@ -579,7 +579,7 @@
     },
     {
       "Data": "2.88.9",
-      "UUID": "79568e89-9580-4de3-aa2f-aa5540b643bb",
+      "UUID": "4ce27751-ea43-44a2-8246-5837cf9953df",
       "Purl": "pkg:nuget/SkiaSharp.NativeAssets.macOS@2.88.9",
       "Name": "SkiaSharp.NativeAssets.macOS",
       "Version": "2.88.9",
@@ -597,7 +597,7 @@
     },
     {
       "Data": "2.88.9",
-      "UUID": "c01b861e-7fa1-46f1-9815-c1525175ac0b",
+      "UUID": "11bb8db8-c06b-4235-876e-220e7f96b299",
       "Purl": "pkg:nuget/SkiaSharp.NativeAssets.WebAssembly@2.88.9",
       "Name": "SkiaSharp.NativeAssets.WebAssembly",
       "Version": "2.88.9",
@@ -615,7 +615,7 @@
     },
     {
       "Data": "2.88.9",
-      "UUID": "0391a463-7d29-4e2c-b063-ab21e2a82d28",
+      "UUID": "679f0414-a4ce-45be-8a5c-1db30ad2e531",
       "Purl": "pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9",
       "Name": "SkiaSharp.NativeAssets.Win32",
       "Version": "2.88.9",
@@ -633,7 +633,7 @@
     },
     {
       "Data": "4.5.1",
-      "UUID": "bf13a77b-be52-4eea-9217-1233980080d9",
+      "UUID": "cd2fd0b9-9a8c-49d5-b05e-5302d8847bb0",
       "Purl": "pkg:nuget/System.Buffers@4.5.1",
       "Name": "System.Buffers",
       "Version": "4.5.1",
@@ -650,7 +650,7 @@
     },
     {
       "Data": "8.0.0",
-      "UUID": "217cb93c-38f8-4f98-8ed8-3a3fd9fd5823",
+      "UUID": "81c68b75-3bf6-4e0a-b541-86fb3607c13d",
       "Purl": "pkg:nuget/System.IO.Pipelines@8.0.0",
       "Name": "System.IO.Pipelines",
       "Version": "8.0.0",
@@ -668,7 +668,7 @@
     },
     {
       "Data": "4.5.4",
-      "UUID": "c034f06b-77ca-4f43-82c8-c8bd126de0e8",
+      "UUID": "a48a2b5c-d48c-4dd0-8be6-f02169174571",
       "Purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
       "Name": "System.Threading.Tasks.Extensions",
       "Version": "4.5.4",
@@ -685,7 +685,7 @@
     },
     {
       "Data": "0.21.2",
-      "UUID": "05de2ee3-3184-4f35-a278-f3e906994c7a",
+      "UUID": "b513d8f0-67e7-4fad-b54e-06cad550930d",
       "Purl": "pkg:nuget/Tmds.DBus.Protocol@0.21.2",
       "Name": "Tmds.DBus.Protocol",
       "Version": "0.21.2",

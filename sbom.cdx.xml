@@ -10,14 +10,14 @@
     </tools>
     <component type="application" bom-ref="Gantry">
       <name>Gantry</name>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
       <purl>Gantry</purl>
       <properties>
         <property name="root">true</property>
       </properties>
     </component>
     <properties>
-      <property name="timestamp">2026-01-06T21:33:47.8960026Z</property>
+      <property name="timestamp">2026-01-06T22:44:42.2332670Z</property>
       <property name="components">39</property>
       <property name="dependencies">21</property>
       <property name="groups">Gantry.sln</property>

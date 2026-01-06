@@ -1,6 +1,7 @@
 #!/bin/bash
 
-version=1.0.0
+version=1.1.0
+
 dotnet tool restore || exit 1
 dotnet restore || exit 1
 dotnet list package --vulnerable --include-transitive || exit 1
