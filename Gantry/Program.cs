@@ -1,7 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Logging;
 using Serilog;
 using System;
 using System.IO;
@@ -29,7 +28,8 @@ static class Program
 
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Warning()
-            .WriteTo.Async(a => a.File(logFilePath, rollingInterval: RollingInterval.Day))
+            .WriteTo.Async(a =>
+                a.File(logFilePath, rollingInterval: RollingInterval.Day, retainedFileCountLimit: 31))
             .CreateLogger();
 
         try
