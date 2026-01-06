@@ -3,17 +3,17 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "name": "Gantry",
-  "documentNamespace": "http://spdx.org/spdxdocs/Gantry-1.0.0-1c9360ae-98ca-44c8-82b3-745e033fd21f",
+  "documentNamespace": "http://spdx.org/spdxdocs/Gantry-1.0.0-d29c7f77-d78a-473a-bbe3-c86feee94978",
   "creationInfo": {
     "licenseListVersion": "3.24.0",
-    "created": "2026-01-06T19:49:17Z",
+    "created": "2026-01-06T21:33:47Z",
     "creators": [
       "Tool: Covenant"
     ]
   },
   "packages": [
     {
-      "SPDXID": "SPDXRef-Gantry-f623cccf-7a68-45f0-9d56-49642c04ba34",
+      "SPDXID": "SPDXRef-Gantry-d6f0383f-ee16-4c49-b599-5383342df00e",
       "name": "Gantry",
       "versionInfo": "1.0.0",
       "copyrightText": "NOASSERTION",
@@ -23,7 +23,7 @@
       "licenseDeclared": "NOASSERTION"
     },
     {
-      "SPDXID": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "SPDXID": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "name": "Avalonia",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Angle.Windows.Natives-25928816-e788-4b33-83ff-2e054900360d",
+      "SPDXID": "SPDXRef-Avalonia.Angle.Windows.Natives-ef138b7e-9b1f-47aa-b1f5-1da6987b72d2",
       "name": "Avalonia.Angle.Windows.Natives",
       "versionInfo": "2.1.25547.20250602",
       "checksums": [
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.BuildServices-5b5412e2-0e64-49de-9239-c5752883851d",
+      "SPDXID": "SPDXRef-Avalonia.BuildServices-9b0acb16-6fe7-44d9-8381-6a4fe5c41574",
       "name": "Avalonia.BuildServices",
       "versionInfo": "0.0.31",
       "checksums": [
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Controls.ColorPicker-24196b1a-4ba7-4f1f-b88d-549eda35e269",
+      "SPDXID": "SPDXRef-Avalonia.Controls.ColorPicker-dc8cdfd8-3e1a-4f4f-998b-7d20ead0b3e7",
       "name": "Avalonia.Controls.ColorPicker",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Controls.DataGrid-90e2f1b9-b6bb-4b01-b8a2-73d068077c88",
+      "SPDXID": "SPDXRef-Avalonia.Controls.DataGrid-97ebf6fe-8c26-4baa-910d-6add3bfb6c71",
       "name": "Avalonia.Controls.DataGrid",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -138,7 +138,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Desktop-6d72cd29-e692-4fc7-90a1-08c75a3ac126",
+      "SPDXID": "SPDXRef-Avalonia.Desktop-49c9144a-90b4-4b05-a719-1dafd97f3c19",
       "name": "Avalonia.Desktop",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Diagnostics-d6210dfb-7d75-4150-921b-7e4124a30a85",
+      "SPDXID": "SPDXRef-Avalonia.Diagnostics-747d1880-bd13-47fa-874b-390da4e8a7d5",
       "name": "Avalonia.Diagnostics",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Fonts.Inter-9da58b09-9e59-41b6-8ee1-c4ae2e90a117",
+      "SPDXID": "SPDXRef-Avalonia.Fonts.Inter-431f9be6-e6cf-4f8e-975c-7f2dcfb41923",
       "name": "Avalonia.Fonts.Inter",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -207,7 +207,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.FreeDesktop-57770b39-b9c8-42a3-8924-2cb8726e5963",
+      "SPDXID": "SPDXRef-Avalonia.FreeDesktop-09fd736e-3317-4a85-b233-2588064dd2e9",
       "name": "Avalonia.FreeDesktop",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Native-2537b1fd-9e56-4900-9934-3aa94edef87f",
+      "SPDXID": "SPDXRef-Avalonia.Native-4285fef0-d02f-4560-a0bc-38eab744e1c5",
       "name": "Avalonia.Native",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Remote.Protocol-c60eb73b-0e0b-4313-b9cf-b5409ed920d8",
+      "SPDXID": "SPDXRef-Avalonia.Remote.Protocol-dfbb4cb8-b70b-4a90-b64a-0037e76594d1",
       "name": "Avalonia.Remote.Protocol",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -276,7 +276,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
+      "SPDXID": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
       "name": "Avalonia.Skia",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Themes.Fluent-f6727cdc-f787-4ee5-80de-4d0434d6d9f6",
+      "SPDXID": "SPDXRef-Avalonia.Themes.Fluent-39a791f0-2515-486f-90a4-161443ef9f48",
       "name": "Avalonia.Themes.Fluent",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -322,7 +322,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Themes.Simple-c95df8e6-36f3-4b82-92af-551a725d7962",
+      "SPDXID": "SPDXRef-Avalonia.Themes.Simple-45f73d5c-de8a-4187-97e1-61f59216dc6a",
       "name": "Avalonia.Themes.Simple",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -345,7 +345,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.Win32-f61774c5-4d6e-4ce5-877b-73b2b6acbc70",
+      "SPDXID": "SPDXRef-Avalonia.Win32-28079fe3-7d18-4a6d-8fe5-770230dfb5e2",
       "name": "Avalonia.Win32",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Avalonia.X11-e90abbc2-4f93-4ba7-b8a1-6b732f592824",
+      "SPDXID": "SPDXRef-Avalonia.X11-b5064d1b-5039-4203-b496-84b325046f76",
       "name": "Avalonia.X11",
       "versionInfo": "11.3.2",
       "checksums": [
@@ -391,7 +391,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Docker.DotNet-ad29d7ef-3bde-47cb-95f1-7bad116f2a60",
+      "SPDXID": "SPDXRef-Docker.DotNet-25e87000-af33-4cbd-ad4f-8197c9a03667",
       "name": "Docker.DotNet",
       "versionInfo": "3.125.15",
       "checksums": [
@@ -414,7 +414,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-FluentIcons.Avalonia-935c1329-9bf0-4008-8a27-a0cc0bcdda9e",
+      "SPDXID": "SPDXRef-FluentIcons.Avalonia-72df9d52-f929-4ad7-ae14-a10f3728550b",
       "name": "FluentIcons.Avalonia",
       "versionInfo": "1.1.303",
       "checksums": [
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-FluentIcons.Common-cd33efdf-ebf7-4d08-bbb2-f522985fa87c",
+      "SPDXID": "SPDXRef-FluentIcons.Common-c5a2518c-be31-4c61-adda-942f0750ccf9",
       "name": "FluentIcons.Common",
       "versionInfo": "1.1.303",
       "checksums": [
@@ -460,7 +460,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-HarfBuzzSharp-7fc8fcee-36a6-481c-a407-0b106d0d5ed6",
+      "SPDXID": "SPDXRef-HarfBuzzSharp-280362f5-aa12-455b-a684-14bb1dca0551",
       "name": "HarfBuzzSharp",
       "versionInfo": "8.3.1.1",
       "checksums": [
@@ -483,7 +483,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-4bfa95bd-7941-4883-9537-a10591601d51",
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-6c742c62-e207-4e21-abb1-05cbd2e5d38b",
       "name": "HarfBuzzSharp.NativeAssets.Linux",
       "versionInfo": "8.3.1.1",
       "checksums": [
@@ -506,7 +506,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-76c5fde4-e814-451b-bdbb-606496f188dd",
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-06679c7b-2978-4e20-a6bd-f382d362180a",
       "name": "HarfBuzzSharp.NativeAssets.macOS",
       "versionInfo": "8.3.1.1",
       "checksums": [
@@ -529,7 +529,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-dddc025f-b98f-49bf-9490-de6e12c84d99",
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-b6771bc6-f07e-4b1b-99c3-952359fe93f2",
       "name": "HarfBuzzSharp.NativeAssets.WebAssembly",
       "versionInfo": "8.3.1.1",
       "checksums": [
@@ -552,7 +552,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-87c12900-ef99-4bbe-8f79-efc6a26390a9",
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-d9ecf3be-e2a1-4993-9588-2774f5d8f2e0",
       "name": "HarfBuzzSharp.NativeAssets.Win32",
       "versionInfo": "8.3.1.1",
       "checksums": [
@@ -575,7 +575,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-MicroCom.Runtime-4a37c423-e01e-469d-b650-30386c394ebe",
+      "SPDXID": "SPDXRef-MicroCom.Runtime-1c316622-eb5f-4026-b7e5-2b29d4e96c66",
       "name": "MicroCom.Runtime",
       "versionInfo": "0.11.0",
       "checksums": [
@@ -598,7 +598,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Newtonsoft.Json-67517858-b87f-4b99-9bab-3c2ce4c43b33",
+      "SPDXID": "SPDXRef-Newtonsoft.Json-634507cb-1ad4-4b37-8a60-abefbc9e6981",
       "name": "Newtonsoft.Json",
       "versionInfo": "13.0.1",
       "checksums": [
@@ -621,7 +621,76 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-SkiaSharp-6eb6bf92-3006-48b1-9b14-5194932ced3d",
+      "SPDXID": "SPDXRef-Serilog-bd719f34-c7b8-4972-a482-7472e9d2f365",
+      "name": "Serilog",
+      "versionInfo": "4.3.0",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "8F647FE61DE431B0A0D40A7F90CCEB950A3C2A9878422E0F5721186009B79210A80B3035E78061C935B2FA01A8865560B449314A2F51E352D3D96C30EF2B2CC2"
+        }
+      ],
+      "copyrightText": "Copyright © Serilog Contributors",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Serilog@4.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Serilog.Sinks.Async-bb3e1bbd-1fbb-4dac-b657-2fcee349ed81",
+      "name": "Serilog.Sinks.Async",
+      "versionInfo": "2.1.0",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "04C6181F987CF459D96FFAFCA2A7CB7D5BEF0F5B079277DEB5AC009D238929FF8B075B2E73504330505462D76652CE106966DD3A0407C8799BFE5D0BEC7F0FDD"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Serilog.Sinks.Async@2.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Serilog.Sinks.File-3a955008-d265-405d-b329-eadcac92f87d",
+      "name": "Serilog.Sinks.File",
+      "versionInfo": "7.0.0",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6081F48413E3C04B47DF1737AF1B6B1D21DCB2D60C1FE7A866DA6C14D702C50995FED33EA07058E975E5B925269E675DC340BD20A3A2A167B05E14EAD43F5419"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Serilog.Sinks.File@7.0.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-SkiaSharp-9866497e-d283-47d7-8a5e-4170a420edb3",
       "name": "SkiaSharp",
       "versionInfo": "2.88.9",
       "checksums": [
@@ -644,7 +713,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.Linux-b4ad0333-5a5c-4328-9340-0dc294675686",
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.Linux-42da8429-c7bd-48e6-beaf-2c8539b7cca1",
       "name": "SkiaSharp.NativeAssets.Linux",
       "versionInfo": "2.88.9",
       "checksums": [
@@ -667,7 +736,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.macOS-cea38015-5730-4e39-90e9-87f6bc1d2366",
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.macOS-bea1c72c-7fe0-4242-9846-c6eb78f95d76",
       "name": "SkiaSharp.NativeAssets.macOS",
       "versionInfo": "2.88.9",
       "checksums": [
@@ -690,7 +759,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-77672aa5-754f-4ec6-9904-fd5c0be83072",
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-2c71937f-edbc-4770-90d5-ebfbfa95d883",
       "name": "SkiaSharp.NativeAssets.WebAssembly",
       "versionInfo": "2.88.9",
       "checksums": [
@@ -713,7 +782,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.Win32-152a9c60-5059-4395-bebc-73067c6332c1",
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.Win32-86265749-7638-4b0e-a455-d846b4eed5bb",
       "name": "SkiaSharp.NativeAssets.Win32",
       "versionInfo": "2.88.9",
       "checksums": [
@@ -736,7 +805,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-System.Buffers-bd566353-abbc-4251-b11f-923421a02b12",
+      "SPDXID": "SPDXRef-System.Buffers-9f1e7b57-757b-4011-b93b-b556e9d61b8f",
       "name": "System.Buffers",
       "versionInfo": "4.5.1",
       "checksums": [
@@ -759,7 +828,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-System.IO.Pipelines-de9c7e62-3223-4d3f-b5fa-ad011fe7e234",
+      "SPDXID": "SPDXRef-System.IO.Pipelines-0e17a580-5c33-40da-bb4d-8d23c4aa7147",
       "name": "System.IO.Pipelines",
       "versionInfo": "8.0.0",
       "checksums": [
@@ -782,7 +851,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-System.Threading.Tasks.Extensions-569f1523-72a5-4356-aa71-4d506b45c86f",
+      "SPDXID": "SPDXRef-System.Threading.Tasks.Extensions-6f7b6b3a-42b4-49df-9575-edc18362e8e2",
       "name": "System.Threading.Tasks.Extensions",
       "versionInfo": "4.5.4",
       "checksums": [
@@ -805,7 +874,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-Tmds.DBus.Protocol-bb4ae503-8e27-4305-af59-9d0b089011bb",
+      "SPDXID": "SPDXRef-Tmds.DBus.Protocol-6aaa6b05-51a5-424e-9aed-67888289a9de",
       "name": "Tmds.DBus.Protocol",
       "versionInfo": "0.21.2",
       "checksums": [
@@ -831,222 +900,232 @@
   "relationships": [
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-Gantry-f623cccf-7a68-45f0-9d56-49642c04ba34",
+      "relatedSpdxElement": "SPDXRef-Gantry-d6f0383f-ee16-4c49-b599-5383342df00e",
       "relationshipType": "CONTAINS"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
-      "relatedSpdxElement": "SPDXRef-Avalonia.BuildServices-5b5412e2-0e64-49de-9239-c5752883851d",
+      "spdxElementId": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
+      "relatedSpdxElement": "SPDXRef-Avalonia.BuildServices-9b0acb16-6fe7-44d9-8381-6a4fe5c41574",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-c60eb73b-0e0b-4313-b9cf-b5409ed920d8",
+      "spdxElementId": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-dfbb4cb8-b70b-4a90-b64a-0037e76594d1",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
-      "relatedSpdxElement": "SPDXRef-MicroCom.Runtime-4a37c423-e01e-469d-b650-30386c394ebe",
+      "spdxElementId": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
+      "relatedSpdxElement": "SPDXRef-MicroCom.Runtime-1c316622-eb5f-4026-b7e5-2b29d4e96c66",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-24196b1a-4ba7-4f1f-b88d-549eda35e269",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-dc8cdfd8-3e1a-4f4f-998b-7d20ead0b3e7",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-24196b1a-4ba7-4f1f-b88d-549eda35e269",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-c60eb73b-0e0b-4313-b9cf-b5409ed920d8",
+      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-dc8cdfd8-3e1a-4f4f-998b-7d20ead0b3e7",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-dfbb4cb8-b70b-4a90-b64a-0037e76594d1",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Controls.DataGrid-90e2f1b9-b6bb-4b01-b8a2-73d068077c88",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Controls.DataGrid-97ebf6fe-8c26-4baa-910d-6add3bfb6c71",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Desktop-6d72cd29-e692-4fc7-90a1-08c75a3ac126",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-49c9144a-90b4-4b05-a719-1dafd97f3c19",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Desktop-6d72cd29-e692-4fc7-90a1-08c75a3ac126",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Native-2537b1fd-9e56-4900-9934-3aa94edef87f",
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-49c9144a-90b4-4b05-a719-1dafd97f3c19",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Native-4285fef0-d02f-4560-a0bc-38eab744e1c5",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Desktop-6d72cd29-e692-4fc7-90a1-08c75a3ac126",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-49c9144a-90b4-4b05-a719-1dafd97f3c19",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Desktop-6d72cd29-e692-4fc7-90a1-08c75a3ac126",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Win32-f61774c5-4d6e-4ce5-877b-73b2b6acbc70",
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-49c9144a-90b4-4b05-a719-1dafd97f3c19",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Win32-28079fe3-7d18-4a6d-8fe5-770230dfb5e2",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Desktop-6d72cd29-e692-4fc7-90a1-08c75a3ac126",
-      "relatedSpdxElement": "SPDXRef-Avalonia.X11-e90abbc2-4f93-4ba7-b8a1-6b732f592824",
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-49c9144a-90b4-4b05-a719-1dafd97f3c19",
+      "relatedSpdxElement": "SPDXRef-Avalonia.X11-b5064d1b-5039-4203-b496-84b325046f76",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-d6210dfb-7d75-4150-921b-7e4124a30a85",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-747d1880-bd13-47fa-874b-390da4e8a7d5",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-d6210dfb-7d75-4150-921b-7e4124a30a85",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Controls.ColorPicker-24196b1a-4ba7-4f1f-b88d-549eda35e269",
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-747d1880-bd13-47fa-874b-390da4e8a7d5",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Controls.ColorPicker-dc8cdfd8-3e1a-4f4f-998b-7d20ead0b3e7",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-d6210dfb-7d75-4150-921b-7e4124a30a85",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Themes.Simple-c95df8e6-36f3-4b82-92af-551a725d7962",
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-747d1880-bd13-47fa-874b-390da4e8a7d5",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Themes.Simple-45f73d5c-de8a-4187-97e1-61f59216dc6a",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Fonts.Inter-9da58b09-9e59-41b6-8ee1-c4ae2e90a117",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Fonts.Inter-431f9be6-e6cf-4f8e-975c-7f2dcfb41923",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-57770b39-b9c8-42a3-8924-2cb8726e5963",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-09fd736e-3317-4a85-b233-2588064dd2e9",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-57770b39-b9c8-42a3-8924-2cb8726e5963",
-      "relatedSpdxElement": "SPDXRef-Tmds.DBus.Protocol-bb4ae503-8e27-4305-af59-9d0b089011bb",
+      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-09fd736e-3317-4a85-b233-2588064dd2e9",
+      "relatedSpdxElement": "SPDXRef-Tmds.DBus.Protocol-6aaa6b05-51a5-424e-9aed-67888289a9de",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Native-2537b1fd-9e56-4900-9934-3aa94edef87f",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Native-4285fef0-d02f-4560-a0bc-38eab744e1c5",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp-7fc8fcee-36a6-481c-a407-0b106d0d5ed6",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp-280362f5-aa12-455b-a684-14bb1dca0551",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-4bfa95bd-7941-4883-9537-a10591601d51",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-6c742c62-e207-4e21-abb1-05cbd2e5d38b",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-dddc025f-b98f-49bf-9490-de6e12c84d99",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-b6771bc6-f07e-4b1b-99c3-952359fe93f2",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-SkiaSharp-6eb6bf92-3006-48b1-9b14-5194932ced3d",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp-9866497e-d283-47d7-8a5e-4170a420edb3",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Linux-b4ad0333-5a5c-4328-9340-0dc294675686",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Linux-42da8429-c7bd-48e6-beaf-2c8539b7cca1",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
-      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-77672aa5-754f-4ec6-9904-fd5c0be83072",
+      "spdxElementId": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-2c71937f-edbc-4770-90d5-ebfbfa95d883",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Themes.Fluent-f6727cdc-f787-4ee5-80de-4d0434d6d9f6",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Themes.Fluent-39a791f0-2515-486f-90a4-161443ef9f48",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Themes.Simple-c95df8e6-36f3-4b82-92af-551a725d7962",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Themes.Simple-45f73d5c-de8a-4187-97e1-61f59216dc6a",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Win32-f61774c5-4d6e-4ce5-877b-73b2b6acbc70",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.Win32-28079fe3-7d18-4a6d-8fe5-770230dfb5e2",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.Win32-f61774c5-4d6e-4ce5-877b-73b2b6acbc70",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Angle.Windows.Natives-25928816-e788-4b33-83ff-2e054900360d",
+      "spdxElementId": "SPDXRef-Avalonia.Win32-28079fe3-7d18-4a6d-8fe5-770230dfb5e2",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Angle.Windows.Natives-ef138b7e-9b1f-47aa-b1f5-1da6987b72d2",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.X11-e90abbc2-4f93-4ba7-b8a1-6b732f592824",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-Avalonia.X11-b5064d1b-5039-4203-b496-84b325046f76",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.X11-e90abbc2-4f93-4ba7-b8a1-6b732f592824",
-      "relatedSpdxElement": "SPDXRef-Avalonia.FreeDesktop-57770b39-b9c8-42a3-8924-2cb8726e5963",
+      "spdxElementId": "SPDXRef-Avalonia.X11-b5064d1b-5039-4203-b496-84b325046f76",
+      "relatedSpdxElement": "SPDXRef-Avalonia.FreeDesktop-09fd736e-3317-4a85-b233-2588064dd2e9",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Avalonia.X11-e90abbc2-4f93-4ba7-b8a1-6b732f592824",
-      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-5f30f1e9-0ec5-4ece-b0c2-7452debd58be",
+      "spdxElementId": "SPDXRef-Avalonia.X11-b5064d1b-5039-4203-b496-84b325046f76",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-04c9386b-cedd-43ee-baf7-68d6661d2ab3",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Docker.DotNet-ad29d7ef-3bde-47cb-95f1-7bad116f2a60",
-      "relatedSpdxElement": "SPDXRef-Newtonsoft.Json-67517858-b87f-4b99-9bab-3c2ce4c43b33",
+      "spdxElementId": "SPDXRef-Docker.DotNet-25e87000-af33-4cbd-ad4f-8197c9a03667",
+      "relatedSpdxElement": "SPDXRef-Newtonsoft.Json-634507cb-1ad4-4b37-8a60-abefbc9e6981",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Docker.DotNet-ad29d7ef-3bde-47cb-95f1-7bad116f2a60",
-      "relatedSpdxElement": "SPDXRef-System.Buffers-bd566353-abbc-4251-b11f-923421a02b12",
+      "spdxElementId": "SPDXRef-Docker.DotNet-25e87000-af33-4cbd-ad4f-8197c9a03667",
+      "relatedSpdxElement": "SPDXRef-System.Buffers-9f1e7b57-757b-4011-b93b-b556e9d61b8f",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Docker.DotNet-ad29d7ef-3bde-47cb-95f1-7bad116f2a60",
-      "relatedSpdxElement": "SPDXRef-System.Threading.Tasks.Extensions-569f1523-72a5-4356-aa71-4d506b45c86f",
+      "spdxElementId": "SPDXRef-Docker.DotNet-25e87000-af33-4cbd-ad4f-8197c9a03667",
+      "relatedSpdxElement": "SPDXRef-System.Threading.Tasks.Extensions-6f7b6b3a-42b4-49df-9575-edc18362e8e2",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-935c1329-9bf0-4008-8a27-a0cc0bcdda9e",
-      "relatedSpdxElement": "SPDXRef-Avalonia-6d931624-db7a-4cad-81b3-8c96d86d08b5",
+      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-72df9d52-f929-4ad7-ae14-a10f3728550b",
+      "relatedSpdxElement": "SPDXRef-Avalonia-e60ad34c-0b22-4181-b479-974788fd2761",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-935c1329-9bf0-4008-8a27-a0cc0bcdda9e",
-      "relatedSpdxElement": "SPDXRef-FluentIcons.Common-cd33efdf-ebf7-4d08-bbb2-f522985fa87c",
+      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-72df9d52-f929-4ad7-ae14-a10f3728550b",
+      "relatedSpdxElement": "SPDXRef-FluentIcons.Common-c5a2518c-be31-4c61-adda-942f0750ccf9",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-HarfBuzzSharp-7fc8fcee-36a6-481c-a407-0b106d0d5ed6",
-      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-87c12900-ef99-4bbe-8f79-efc6a26390a9",
+      "spdxElementId": "SPDXRef-HarfBuzzSharp-280362f5-aa12-455b-a684-14bb1dca0551",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-d9ecf3be-e2a1-4993-9588-2774f5d8f2e0",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-HarfBuzzSharp-7fc8fcee-36a6-481c-a407-0b106d0d5ed6",
-      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-76c5fde4-e814-451b-bdbb-606496f188dd",
+      "spdxElementId": "SPDXRef-HarfBuzzSharp-280362f5-aa12-455b-a684-14bb1dca0551",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-06679c7b-2978-4e20-a6bd-f382d362180a",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-SkiaSharp-6eb6bf92-3006-48b1-9b14-5194932ced3d",
-      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Win32-152a9c60-5059-4395-bebc-73067c6332c1",
+      "spdxElementId": "SPDXRef-Serilog.Sinks.Async-bb3e1bbd-1fbb-4dac-b657-2fcee349ed81",
+      "relatedSpdxElement": "SPDXRef-Serilog-bd719f34-c7b8-4972-a482-7472e9d2f365",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-SkiaSharp-6eb6bf92-3006-48b1-9b14-5194932ced3d",
-      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.macOS-cea38015-5730-4e39-90e9-87f6bc1d2366",
+      "spdxElementId": "SPDXRef-Serilog.Sinks.File-3a955008-d265-405d-b329-eadcac92f87d",
+      "relatedSpdxElement": "SPDXRef-Serilog-bd719f34-c7b8-4972-a482-7472e9d2f365",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-SkiaSharp.NativeAssets.Linux-b4ad0333-5a5c-4328-9340-0dc294675686",
-      "relatedSpdxElement": "SPDXRef-SkiaSharp-6eb6bf92-3006-48b1-9b14-5194932ced3d",
+      "spdxElementId": "SPDXRef-SkiaSharp-9866497e-d283-47d7-8a5e-4170a420edb3",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Win32-86265749-7638-4b0e-a455-d846b4eed5bb",
       "relationshipType": "DEPENDS_ON"
     },
     {
-      "spdxElementId": "SPDXRef-Tmds.DBus.Protocol-bb4ae503-8e27-4305-af59-9d0b089011bb",
-      "relatedSpdxElement": "SPDXRef-System.IO.Pipelines-de9c7e62-3223-4d3f-b5fa-ad011fe7e234",
+      "spdxElementId": "SPDXRef-SkiaSharp-9866497e-d283-47d7-8a5e-4170a420edb3",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.macOS-bea1c72c-7fe0-4242-9846-c6eb78f95d76",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp.NativeAssets.Linux-42da8429-c7bd-48e6-beaf-2c8539b7cca1",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp-9866497e-d283-47d7-8a5e-4170a420edb3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Tmds.DBus.Protocol-6aaa6b05-51a5-424e-9aed-67888289a9de",
+      "relatedSpdxElement": "SPDXRef-System.IO.Pipelines-0e17a580-5c33-40da-bb4d-8d23c4aa7147",
       "relationshipType": "DEPENDS_ON"
     }
   ]
