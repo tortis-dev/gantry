@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://cyclonedx.org/schema/bom/1.6">
+  <metadata>
+    <tools>
+      <tool>
+        <vendor>Covenant</vendor>
+        <name>Covenant</name>
+        <version>0.24.0+7063553f83d0e4856bb510baf801339ca54ebc47</version>
+      </tool>
+    </tools>
+    <component type="application" bom-ref="Gantry">
+      <name>Gantry</name>
+      <version>1.0.0</version>
+      <purl>Gantry</purl>
+      <properties>
+        <property name="root">true</property>
+      </properties>
+    </component>
+    <properties>
+      <property name="timestamp">2026-01-06T19:49:17.8862068Z</property>
+      <property name="components">36</property>
+      <property name="dependencies">19</property>
+      <property name="groups">Gantry.sln</property>
+    </properties>
+  </metadata>
+  <components>
+    <component type="application" bom-ref="pkg:covenant/dotnet/Gantry@1.0.0">
+      <name>Gantry</name>
+      <version>1.0.0</version>
+      <purl>pkg:covenant/dotnet/Gantry@1.0.0</purl>
+      <properties>
+        <property name="root">true</property>
+        <property name="groups">Gantry.sln</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia@11.3.2">
+      <name>Avalonia</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">40A2FD96BA1BCB55474A695F187BC85E24300AF88DDC7B32FBF6D41C424B644B2CB775AD5EC2F625102B727587F8D6B03FA3B2942B68B1C8CCC631A020DBD83D</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Angle.Windows.Natives@2.1.25547.20250602">
+      <name>Avalonia.Angle.Windows.Natives</name>
+      <version>2.1.25547.20250602</version>
+      <hashes>
+        <hash alg="SHA3-512">5CF4BA739C4FE0BF9E36AD2B4D481338239EA98216E6188F8C2F7AF5EFBDCB8926CE7D6AF2DF951071F8D9294D4D25CE1E52835F2BF4AC08C3DCEBA5E503AE60</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <text content-type="text/plain" encoding="base64">Ly8gQ29weXJpZ2h0IDIwMTggVGhlIEFOR0xFIFByb2plY3QgQXV0aG9ycy4NCi8vIEFsbCByaWdodHMgcmVzZXJ2ZWQuDQovLw0KLy8gUmVkaXN0cmlidXRpb24gYW5kIHVzZSBpbiBzb3VyY2UgYW5kIGJpbmFyeSBmb3Jtcywgd2l0aCBvciB3aXRob3V0DQovLyBtb2RpZmljYXRpb24sIGFyZSBwZXJtaXR0ZWQgcHJvdmlkZWQgdGhhdCB0aGUgZm9sbG93aW5nIGNvbmRpdGlvbnMNCi8vIGFyZSBtZXQ6DQovLw0KLy8gICAgIFJlZGlzdHJpYnV0aW9ucyBvZiBzb3VyY2UgY29kZSBtdXN0IHJldGFpbiB0aGUgYWJvdmUgY29weXJpZ2h0DQovLyAgICAgbm90aWNlLCB0aGlzIGxpc3Qgb2YgY29uZGl0aW9ucyBhbmQgdGhlIGZvbGxvd2luZyBkaXNjbGFpbWVyLg0KLy8NCi8vICAgICBSZWRpc3RyaWJ1dGlvbnMgaW4gYmluYXJ5IGZvcm0gbXVzdCByZXByb2R1Y2UgdGhlIGFib3ZlDQovLyAgICAgY29weXJpZ2h0IG5vdGljZSwgdGhpcyBsaXN0IG9mIGNvbmRpdGlvbnMgYW5kIHRoZSBmb2xsb3dpbmcNCi8vICAgICBkaXNjbGFpbWVyIGluIHRoZSBkb2N1bWVudGF0aW9uIGFuZC9vciBvdGhlciBtYXRlcmlhbHMgcHJvdmlkZWQNCi8vICAgICB3aXRoIHRoZSBkaXN0cmlidXRpb24uDQovLw0KLy8gICAgIE5laXRoZXIgdGhlIG5hbWUgb2YgVHJhbnNHYW1pbmcgSW5jLiwgR29vZ2xlIEluYy4sIDNETGFicyBJbmMuDQovLyAgICAgTHRkLiwgbm9yIHRoZSBuYW1lcyBvZiB0aGVpciBjb250cmlidXRvcnMgbWF5IGJlIHVzZWQgdG8gZW5kb3JzZQ0KLy8gICAgIG9yIHByb21vdGUgcHJvZHVjdHMgZGVyaXZlZCBmcm9tIHRoaXMgc29mdHdhcmUgd2l0aG91dCBzcGVjaWZpYw0KLy8gICAgIHByaW9yIHdyaXR0ZW4gcGVybWlzc2lvbi4NCi8vDQovLyBUSElTIFNPRlRXQVJFIElTIFBST1ZJREVEIEJZIFRIRSBDT1BZUklHSFQgSE9MREVSUyBBTkQgQ09OVFJJQlVUT1JTDQovLyAiQVMgSVMiIEFORCBBTlkgRVhQUkVTUyBPUiBJTVBMSUVEIFdBUlJBTlRJRVMsIElOQ0xVRElORywgQlVUIE5PVA0KLy8gTElNSVRFRCBUTywgVEhFIElNUExJRUQgV0FSUkFOVElFUyBPRiBNRVJDSEFOVEFCSUxJVFkgQU5EIEZJVE5FU1MNCi8vIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRSBBUkUgRElTQ0xBSU1FRC4gSU4gTk8gRVZFTlQgU0hBTEwgVEhFDQovLyBDT1BZUklHSFQgT1dORVIgT1IgQ09OVFJJQlVUT1JTIEJFIExJQUJMRSBGT1IgQU5ZIERJUkVDVCwgSU5ESVJFQ1QsDQovLyBJTkNJREVOVEFMLCBTUEVDSUFMLCBFWEVNUExBUlksIE9SIENPTlNFUVVFTlRJQUwgREFNQUdFUyAoSU5DTFVESU5HLA0KLy8gQlVUIE5PVCBMSU1JVEVEIFRPLCBQUk9DVVJFTUVOVCBPRiBTVUJTVElUVVRFIEdPT0RTIE9SIFNFUlZJQ0VTOw0KLy8gTE9TUyBPRiBVU0UsIERBVEEsIE9SIFBST0ZJVFM7IE9SIEJVU0lORVNTIElOVEVSUlVQVElPTikgSE9XRVZFUg0KLy8gQ0FVU0VEIEFORCBPTiBBTlkgVEhFT1JZIE9GIExJQUJJTElUWSwgV0hFVEhFUiBJTiBDT05UUkFDVCwgU1RSSUNUDQovLyBMSUFCSUxJVFksIE9SIFRPUlQgKElOQ0xVRElORyBORUdMSUdFTkNFIE9SIE9USEVSV0lTRSkgQVJJU0lORyBJTg0KLy8gQU5ZIFdBWSBPVVQgT0YgVEhFIFVTRSBPRiBUSElTIFNPRlRXQVJFLCBFVkVOIElGIEFEVklTRUQgT0YgVEhFDQovLyBQT1NTSUJJTElUWSBPRiBTVUNIIERBTUFHRS4NCg==</text>
+          <url>https://aka.ms/deprecateLicenseUrl</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Angle.Windows.Natives@2.1.25547.20250602</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.BuildServices@0.0.31">
+      <name>Avalonia.BuildServices</name>
+      <version>0.0.31</version>
+      <hashes>
+        <hash alg="SHA3-512">00490F7472CFB971E4042E1176C64391254D7BE14F6FBDD04371610B67B450B2D1FC6271B82B3BA9D3EC967B9522CBF855CCF5C03AE8FFDDEDAD5C31DFBB22B8</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.BuildServices@0.0.31</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2">
+      <name>Avalonia.Controls.ColorPicker</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">B91819318B5E558A0E52155275A27B623887277940A165117962900AE68E24430FA9B309E430B7FA0C7D7CA82A8C9D7B3F38BF4E2CB33765100A8077213E012C</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Controls.DataGrid@11.3.2">
+      <name>Avalonia.Controls.DataGrid</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">217DCC5FC8EF9BC776D4DAA0AC49DA86F5EDEA63BF5E9BC8A17C118369D9F8A18D3FA3D9F5A4406029EA5FB1636E5177C3DC5596C70BAA0867FA9E76E0A206C9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Controls.DataGrid@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Desktop@11.3.2">
+      <name>Avalonia.Desktop</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">1C9AE2156272C7A02D0FBDA4D0176CE222DA68E59A46D07FA798DE1B7830A528100B888D660F743BE84113E3C854B784E58431678CD971DBBE6E85BFE4DC850E</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Desktop@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Diagnostics@11.3.2">
+      <name>Avalonia.Diagnostics</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">CE6177C390C368CC4999CE6D406B3D13080F9A3A818BF59228CD1D5613BADC7812697D755562F84D8633EC5D2AAF016A56D43F6102C6BA98A111D66A5776C9DB</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Diagnostics@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Fonts.Inter@11.3.2">
+      <name>Avalonia.Fonts.Inter</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">122AD251FAEF0E806F9E1C3D14D0223139F9A211A94C17EEF9D66CA306D8384D44C896972DADCB842375E9605D7E982FE0AA31B9804033A2D015E5C4C8D167AB</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Fonts.Inter@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.FreeDesktop@11.3.2">
+      <name>Avalonia.FreeDesktop</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">4C48D200BA6154735F9E7E78B252A7DC5D32E1C05EE6B81569698DC4D54E5894C888F37603B6FB945F3086677058E1D045F3E5C8859ED8737163D4F81EE12081</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.FreeDesktop@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Native@11.3.2">
+      <name>Avalonia.Native</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">E3972A650B6FE12EDEC335E04EDF2A03CEBE143E217265C59282938C5213364E7664F56018F4583F186FFCCCAFDE9E4E66E403661A1AF8D966D5751A7450BA6C</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Native@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Remote.Protocol@11.3.2">
+      <name>Avalonia.Remote.Protocol</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">CB5716D8DCE52788B19F860193F4675C8F16B2ECE8D97C0F716EE77A594B45241A2D34B918174BEAB94F6CC7048CCDFA8D55D6A245F4762CB42EA76062F8252B</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Remote.Protocol@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Skia@11.3.2">
+      <name>Avalonia.Skia</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">6AC40091447721C492B09641C68EE8C1AF45953395C3551D3E6492B7975D444E49AA181E55AC4768C50ABBA2A1EFAF7135B0919ECC5DA9A99F0EB1E98C9EE5B6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Skia@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Themes.Fluent@11.3.2">
+      <name>Avalonia.Themes.Fluent</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">6BD94A2A2BEA48694A30E342DDA92CFCF567CA192B683E596C45FBFB5775108BEE66FE4C8171D7EA7386551F4188A942CB44F248B31B85C26D3FA507B239B8A7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Themes.Fluent@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Themes.Simple@11.3.2">
+      <name>Avalonia.Themes.Simple</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">2EE0C4EA3AB2E1DB273EB1376A7A5FFCD7C24E4B7BD6D102F58E45A4D8C158C0CEF5C22A3A2B49B185A6B99425ED648B13234DC6FD6BDA3DB783100511CFEADF</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Themes.Simple@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.Win32@11.3.2">
+      <name>Avalonia.Win32</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">47CF2D4EA6739D60331416DD9AE5FDEAC9E61DA4C6175CE5238FBB3C56071387012F3A7BFC8058E3CA254D727F122CD03FF0D67F78EE9AC2042239357801D2C2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.Win32@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Avalonia.X11@11.3.2">
+      <name>Avalonia.X11</name>
+      <version>11.3.2</version>
+      <hashes>
+        <hash alg="SHA3-512">EEBA7DF3C0B3A7B8E828B0A2C789E730F795038FB0C44A19A8D2D3844A7E9F5BF4568157069542FCC5F3890EE8061FABADDFED7BF1CA68CFE0AA683EB131FCBE</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Avalonia.X11@11.3.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Docker.DotNet@3.125.15">
+      <name>Docker.DotNet</name>
+      <version>3.125.15</version>
+      <hashes>
+        <hash alg="SHA3-512">F65555FDE774F5F4660F6D67DE52CC2E0256C467FD743B63E290E8BB066291D3021E8AD9B5BEB92ADA5D5FF2F6703E314681010E155CF01F425945C4AAA94BA6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <text content-type="text/plain" encoding="base64">VGhlIE1JVCBMaWNlbnNlIChNSVQpCgpDb3B5cmlnaHQgKGMpIC5ORVQgRm91bmRhdGlvbiBhbmQgQ29udHJpYnV0b3JzCgpBbGwgcmlnaHRzIHJlc2VydmVkLgoKUGVybWlzc2lvbiBpcyBoZXJlYnkgZ3JhbnRlZCwgZnJlZSBvZiBjaGFyZ2UsIHRvIGFueSBwZXJzb24gb2J0YWluaW5nIGEgY29weQpvZiB0aGlzIHNvZnR3YXJlIGFuZCBhc3NvY2lhdGVkIGRvY3VtZW50YXRpb24gZmlsZXMgKHRoZSAiU29mdHdhcmUiKSwgdG8gZGVhbAppbiB0aGUgU29mdHdhcmUgd2l0aG91dCByZXN0cmljdGlvbiwgaW5jbHVkaW5nIHdpdGhvdXQgbGltaXRhdGlvbiB0aGUgcmlnaHRzCnRvIHVzZSwgY29weSwgbW9kaWZ5LCBtZXJnZSwgcHVibGlzaCwgZGlzdHJpYnV0ZSwgc3VibGljZW5zZSwgYW5kL29yIHNlbGwKY29waWVzIG9mIHRoZSBTb2Z0d2FyZSwgYW5kIHRvIHBlcm1pdCBwZXJzb25zIHRvIHdob20gdGhlIFNvZnR3YXJlIGlzCmZ1cm5pc2hlZCB0byBkbyBzbywgc3ViamVjdCB0byB0aGUgZm9sbG93aW5nIGNvbmRpdGlvbnM6CgpUaGUgYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBwZXJtaXNzaW9uIG5vdGljZSBzaGFsbCBiZSBpbmNsdWRlZCBpbiBhbGwKY29waWVzIG9yIHN1YnN0YW50aWFsIHBvcnRpb25zIG9mIHRoZSBTb2Z0d2FyZS4KClRIRSBTT0ZUV0FSRSBJUyBQUk9WSURFRCAiQVMgSVMiLCBXSVRIT1VUIFdBUlJBTlRZIE9GIEFOWSBLSU5ELCBFWFBSRVNTIE9SCklNUExJRUQsIElOQ0xVRElORyBCVVQgTk9UIExJTUlURUQgVE8gVEhFIFdBUlJBTlRJRVMgT0YgTUVSQ0hBTlRBQklMSVRZLApGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRSBBTkQgTk9OSU5GUklOR0VNRU5ULiBJTiBOTyBFVkVOVCBTSEFMTCBUSEUKQVVUSE9SUyBPUiBDT1BZUklHSFQgSE9MREVSUyBCRSBMSUFCTEUgRk9SIEFOWSBDTEFJTSwgREFNQUdFUyBPUiBPVEhFUgpMSUFCSUxJVFksIFdIRVRIRVIgSU4gQU4gQUNUSU9OIE9GIENPTlRSQUNULCBUT1JUIE9SIE9USEVSV0lTRSwgQVJJU0lORyBGUk9NLApPVVQgT0YgT1IgSU4gQ09OTkVDVElPTiBXSVRIIFRIRSBTT0ZUV0FSRSBPUiBUSEUgVVNFIE9SIE9USEVSIERFQUxJTkdTIElOIFRIRQpTT0ZUV0FSRS4=</text>
+          <url>https://aka.ms/deprecateLicenseUrl</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Docker.DotNet@3.125.15</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/FluentIcons.Avalonia@1.1.303">
+      <name>FluentIcons.Avalonia</name>
+      <version>1.1.303</version>
+      <hashes>
+        <hash alg="SHA3-512">574D4037CCD9269446A6C9EECF3A62B2B75FC270BF55844A1872E2E8411B3AFADA3BA879161A3168BCE6950699F2BBF2144183030BB2F3B8B7A21B8A518A12FE</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/FluentIcons.Avalonia@1.1.303</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/FluentIcons.Common@1.1.303">
+      <name>FluentIcons.Common</name>
+      <version>1.1.303</version>
+      <hashes>
+        <hash alg="SHA3-512">0A959B0FD827DF472D5149A4294102E5EFCB6585CE67BAD2266ACE268AF62D61835D78F42AD7B0AF9EF86CBF819E64DD8A85B95850AA5781F5D57F2ACB8E0C16</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/FluentIcons.Common@1.1.303</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/HarfBuzzSharp@8.3.1.1">
+      <name>HarfBuzzSharp</name>
+      <version>8.3.1.1</version>
+      <hashes>
+        <hash alg="SHA3-512">ED1D94447956FA595C4867FE3EEB4A7B67C97E00E0DA5A72762362212CBF25E62BE5936E59617C94A1CBD4E6BBD0AC902854D0D36866BD920ED6A85AE663AC8C</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/HarfBuzzSharp@8.3.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Linux@8.3.1.1">
+      <name>HarfBuzzSharp.NativeAssets.Linux</name>
+      <version>8.3.1.1</version>
+      <hashes>
+        <hash alg="SHA3-512">4DBFFEB5D07C377B5F6D7D54A658C6E272FA786869C4E6A6FDBF8BBF85F89D01A606DDFE240592F36DDD37807470F0546BBC7DE9A6EB0508DA15E91D14A95617</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/HarfBuzzSharp.NativeAssets.Linux@8.3.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1">
+      <name>HarfBuzzSharp.NativeAssets.macOS</name>
+      <version>8.3.1.1</version>
+      <hashes>
+        <hash alg="SHA3-512">063155862A999D07C01E4DF3B2DF2D23AA320C25EE62509B0BDE657EC8797E0C6FE95FE4B29E9F6B2E9A0120DC76DF431C547F7BAF9FAA19936C5A9EB78DA2E6</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/HarfBuzzSharp.NativeAssets.WebAssembly@8.3.1.1">
+      <name>HarfBuzzSharp.NativeAssets.WebAssembly</name>
+      <version>8.3.1.1</version>
+      <hashes>
+        <hash alg="SHA3-512">746D52BF1820D897211982B466D274477DC2E698A97827CB6DC5303B2355AD9EC7929902D484BE205282BEC2EBAAD2824952D7096AE3B03C4A9BE5EE8384D9DB</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/HarfBuzzSharp.NativeAssets.WebAssembly@8.3.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1">
+      <name>HarfBuzzSharp.NativeAssets.Win32</name>
+      <version>8.3.1.1</version>
+      <hashes>
+        <hash alg="SHA3-512">5BF6504C34F9040445D6F88D975896B289CB622B4DE109761E721CB83E8D3301686EEDD6A67A9DD5E4742FEBA6D5ED1D106932372F43159926712AD6F1E02AF3</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/MicroCom.Runtime@0.11.0">
+      <name>MicroCom.Runtime</name>
+      <version>0.11.0</version>
+      <hashes>
+        <hash alg="SHA3-512">C00731176E34EA7B936AD58A38639843C790B027B714ED5D3EA828B85EA94B14A502DED52CA7F60BB10C0AC0E744BD6E62FDCCE0108EBAAF9731C408EECE031E</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/MicroCom.Runtime@0.11.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Newtonsoft.Json@13.0.1">
+      <name>Newtonsoft.Json</name>
+      <version>13.0.1</version>
+      <hashes>
+        <hash alg="SHA3-512">83731B662EAF05379A23F8446EF47BBC111349DD4358B7BD8B51383FE9CF637E2FE62F78CEA52A0D7BDD582DC6FBBB5837D4A7B1D53DCF37A0AE7473E21EE7B1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Newtonsoft.Json@13.0.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/SkiaSharp@2.88.9">
+      <name>SkiaSharp</name>
+      <version>2.88.9</version>
+      <hashes>
+        <hash alg="SHA3-512">3A2FFA5E05F45CDB80E6735EE947E91E08FF145FC50C7882E75D44B6AE0C2CD733420D15B6A4274A186B3A79D463A1273E27FF7FD79A51D0937251EBB6EF761D</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/SkiaSharp@2.88.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9">
+      <name>SkiaSharp.NativeAssets.Linux</name>
+      <version>2.88.9</version>
+      <hashes>
+        <hash alg="SHA3-512">5C6A3E93A18E70E6ADCD548BD2F76FA311114346CE4D812E520F250D33342D5AD8D05EA285433BD15CB19BBC48D9BBF2EF7D1F1725DD71705ACCEFABA3F46892</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/SkiaSharp.NativeAssets.macOS@2.88.9">
+      <name>SkiaSharp.NativeAssets.macOS</name>
+      <version>2.88.9</version>
+      <hashes>
+        <hash alg="SHA3-512">74CFB865746F2911935290BFB92469B331E50415D5ABEDA87598EBDB4049C52AF84A5DAEDA41EBCB0BBAEC6A7DEBB42D83CDC6C9F61CEA55D43C720A78C3EBCE</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/SkiaSharp.NativeAssets.macOS@2.88.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/SkiaSharp.NativeAssets.WebAssembly@2.88.9">
+      <name>SkiaSharp.NativeAssets.WebAssembly</name>
+      <version>2.88.9</version>
+      <hashes>
+        <hash alg="SHA3-512">C1815D86904C25E1BC3E43B22CC4B2DB0EC931C13DD4D9505A2B6CB0CA1D24329F725BCE650AF1B0DC12BC70D8352CC19F2AC452AAB462E7AF4787D4601E0E0A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/SkiaSharp.NativeAssets.WebAssembly@2.88.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9">
+      <name>SkiaSharp.NativeAssets.Win32</name>
+      <version>2.88.9</version>
+      <hashes>
+        <hash alg="SHA3-512">D18BD8194041C7FFB79302D4F1BE584E8C024E88B12CB4669A738CAE551DA3D3E3924087BB0AA42D34A9003CFB35037D73637894E67D02223D100A1B4215EEEC</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.Buffers@4.5.1">
+      <name>System.Buffers</name>
+      <version>4.5.1</version>
+      <hashes>
+        <hash alg="SHA3-512">80DA6158E55B9BCF7E0B5E6379B9CF45A632914F037B53C5BF5609576E3CD7821F7861956B73D74470D2D0C2E56DD235A5EF4CA6FFE7E192B820DC2D023AAFF2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/System.Buffers@4.5.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.IO.Pipelines@8.0.0">
+      <name>System.IO.Pipelines</name>
+      <version>8.0.0</version>
+      <hashes>
+        <hash alg="SHA3-512">57EB6A11E84F40A48B57B1DC5786A01AA9852122B7D15363490D8A12C9A458BF99A8DDF4C0C0247BE98559C2B42E769A10BDA2C5A9817735484D960DC652EB12</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/System.IO.Pipelines@8.0.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.Threading.Tasks.Extensions@4.5.4">
+      <name>System.Threading.Tasks.Extensions</name>
+      <version>4.5.4</version>
+      <hashes>
+        <hash alg="SHA3-512">68052086E77D3C7198737A3DA163D67740B7C44F93250C39659B3BF21B6547A9ABF64CBF40481F5C78F24361AF3AAF47D52D188B371554A0928A7F7665C1FC14</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/System.Threading.Tasks.Extensions@4.5.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Tmds.DBus.Protocol@0.21.2">
+      <name>Tmds.DBus.Protocol</name>
+      <version>0.21.2</version>
+      <hashes>
+        <hash alg="SHA3-512">01E55DAD6B1B3060CF3022727231DB50AE1272F8D71112783F9213FE1ADC930CD8EE60227F7B5569711287858086A9E882BEDA137EBD08C279FDA23C89AF25F2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://licenses.nuget.org/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Tmds.DBus.Protocol@0.21.2</purl>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="pkg:nuget/Avalonia@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia.BuildServices@0.0.31" />
+      <dependency ref="pkg:nuget/Avalonia.Remote.Protocol@11.3.2" />
+      <dependency ref="pkg:nuget/MicroCom.Runtime@0.11.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Remote.Protocol@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Controls.DataGrid@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Desktop@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Native@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Skia@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Win32@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.X11@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Diagnostics@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Themes.Simple@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Fonts.Inter@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.FreeDesktop@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/Tmds.DBus.Protocol@0.21.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Native@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Skia@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/HarfBuzzSharp@8.3.1.1" />
+      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Linux@8.3.1.1" />
+      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.WebAssembly@8.3.1.1" />
+      <dependency ref="pkg:nuget/SkiaSharp@2.88.9" />
+      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9" />
+      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.WebAssembly@2.88.9" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Themes.Fluent@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Themes.Simple@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.Win32@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Angle.Windows.Natives@2.1.25547.20250602" />
+    </dependency>
+    <dependency ref="pkg:nuget/Avalonia.X11@11.3.2">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.FreeDesktop@11.3.2" />
+      <dependency ref="pkg:nuget/Avalonia.Skia@11.3.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Docker.DotNet@3.125.15">
+      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.1" />
+      <dependency ref="pkg:nuget/System.Buffers@4.5.1" />
+      <dependency ref="pkg:nuget/System.Threading.Tasks.Extensions@4.5.4" />
+    </dependency>
+    <dependency ref="pkg:nuget/FluentIcons.Avalonia@1.1.303">
+      <dependency ref="pkg:nuget/Avalonia@11.3.2" />
+      <dependency ref="pkg:nuget/FluentIcons.Common@1.1.303" />
+    </dependency>
+    <dependency ref="pkg:nuget/HarfBuzzSharp@8.3.1.1">
+      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1" />
+      <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1" />
+    </dependency>
+    <dependency ref="pkg:nuget/SkiaSharp@2.88.9">
+      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9" />
+      <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.macOS@2.88.9" />
+    </dependency>
+    <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9">
+      <dependency ref="pkg:nuget/SkiaSharp@2.88.9" />
+    </dependency>
+    <dependency ref="pkg:nuget/Tmds.DBus.Protocol@0.21.2">
+      <dependency ref="pkg:nuget/System.IO.Pipelines@8.0.0" />
+    </dependency>
+  </dependencies>
+</bom>
