@@ -41,4 +41,11 @@ public partial class MainWindow : Window
         Clear();
         NetworkListView.IsVisible = true;
     }
+
+    void About_OnClick(object? sender, RoutedEventArgs e)
+    {
+        var about = new About();
+        about.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+        about.ShowDialog(this);
+    }
 }

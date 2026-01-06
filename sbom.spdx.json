@@ -1,0 +1,1283 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "name": "Unknown",
+  "documentNamespace": "http://spdx.org/spdxdocs/Unknown-0.0.0-84f85ae9-f9e4-49c0-b33f-23d02399770d",
+  "creationInfo": {
+    "licenseListVersion": "3.24.0",
+    "created": "2026-01-06T19:08:15Z",
+    "creators": [
+      "Tool: Covenant"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Gantry-68a307b4-4c21-4b1d-ad84-57db22b905a2",
+      "name": "Gantry",
+      "versionInfo": "0.0.0",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "name": "Avalonia",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "40A2FD96BA1BCB55474A695F187BC85E24300AF88DDC7B32FBF6D41C424B644B2CB775AD5EC2F625102B727587F8D6B03FA3B2942B68B1C8CCC631A020DBD83D"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Angle.Windows.Natives-aca4db50-7016-472d-860e-f698ed51d4de",
+      "name": "Avalonia.Angle.Windows.Natives",
+      "versionInfo": "2.1.25547.20250602",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5CF4BA739C4FE0BF9E36AD2B4D481338239EA98216E6188F8C2F7AF5EFBDCB8926CE7D6AF2DF951071F8D9294D4D25CE1E52835F2BF4AC08C3DCEBA5E503AE60"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Angle.Windows.Natives@2.1.25547.20250602"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.BuildServices-40d378bb-8f62-47bc-8751-7331b215f279",
+      "name": "Avalonia.BuildServices",
+      "versionInfo": "0.0.31",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "00490F7472CFB971E4042E1176C64391254D7BE14F6FBDD04371610B67B450B2D1FC6271B82B3BA9D3EC967B9522CBF855CCF5C03AE8FFDDEDAD5C31DFBB22B8"
+        }
+      ],
+      "copyrightText": "Copyright 2023-2024 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.BuildServices@0.0.31"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "name": "Avalonia.Controls.ColorPicker",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "B91819318B5E558A0E52155275A27B623887277940A165117962900AE68E24430FA9B309E430B7FA0C7D7CA82A8C9D7B3F38BF4E2CB33765100A8077213E012C"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Controls.ColorPicker@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Controls.DataGrid-97909c03-c6b2-4cfc-9f95-fa1655f76399",
+      "name": "Avalonia.Controls.DataGrid",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "217DCC5FC8EF9BC776D4DAA0AC49DA86F5EDEA63BF5E9BC8A17C118369D9F8A18D3FA3D9F5A4406029EA5FB1636E5177C3DC5596C70BAA0867FA9E76E0A206C9"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Controls.DataGrid@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "name": "Avalonia.Desktop",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1C9AE2156272C7A02D0FBDA4D0176CE222DA68E59A46D07FA798DE1B7830A528100B888D660F743BE84113E3C854B784E58431678CD971DBBE6E85BFE4DC850E"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Desktop@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "name": "Avalonia.Diagnostics",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "CE6177C390C368CC4999CE6D406B3D13080F9A3A818BF59228CD1D5613BADC7812697D755562F84D8633EC5D2AAF016A56D43F6102C6BA98A111D66A5776C9DB"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Diagnostics@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Fonts.Inter-7ef9c336-7716-4cc9-96c1-119633b7c0fe",
+      "name": "Avalonia.Fonts.Inter",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "122AD251FAEF0E806F9E1C3D14D0223139F9A211A94C17EEF9D66CA306D8384D44C896972DADCB842375E9605D7E982FE0AA31B9804033A2D015E5C4C8D167AB"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Fonts.Inter@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "name": "Avalonia.FreeDesktop",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4C48D200BA6154735F9E7E78B252A7DC5D32E1C05EE6B81569698DC4D54E5894C888F37603B6FB945F3086677058E1D045F3E5C8859ED8737163D4F81EE12081"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.FreeDesktop@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Native-d9be928e-9689-4b23-b3bd-60c8923ec320",
+      "name": "Avalonia.Native",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "E3972A650B6FE12EDEC335E04EDF2A03CEBE143E217265C59282938C5213364E7664F56018F4583F186FFCCCAFDE9E4E66E403661A1AF8D966D5751A7450BA6C"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Native@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Remote.Protocol-70e7894f-bd58-4120-8d64-5a1ec128a1f2",
+      "name": "Avalonia.Remote.Protocol",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "CB5716D8DCE52788B19F860193F4675C8F16B2ECE8D97C0F716EE77A594B45241A2D34B918174BEAB94F6CC7048CCDFA8D55D6A245F4762CB42EA76062F8252B"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Remote.Protocol@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "name": "Avalonia.Skia",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6AC40091447721C492B09641C68EE8C1AF45953395C3551D3E6492B7975D444E49AA181E55AC4768C50ABBA2A1EFAF7135B0919ECC5DA9A99F0EB1E98C9EE5B6"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Skia@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Themes.Fluent-2bd4ae91-3230-4185-aed8-d9617c960ea9",
+      "name": "Avalonia.Themes.Fluent",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "6BD94A2A2BEA48694A30E342DDA92CFCF567CA192B683E596C45FBFB5775108BEE66FE4C8171D7EA7386551F4188A942CB44F248B31B85C26D3FA507B239B8A7"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Themes.Fluent@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Themes.Simple-85e965dc-c3bd-4b16-8179-c4634f60e0a6",
+      "name": "Avalonia.Themes.Simple",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "2EE0C4EA3AB2E1DB273EB1376A7A5FFCD7C24E4B7BD6D102F58E45A4D8C158C0CEF5C22A3A2B49B185A6B99425ED648B13234DC6FD6BDA3DB783100511CFEADF"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Themes.Simple@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "name": "Avalonia.Win32",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "47CF2D4EA6739D60331416DD9AE5FDEAC9E61DA4C6175CE5238FBB3C56071387012F3A7BFC8058E3CA254D727F122CD03FF0D67F78EE9AC2042239357801D2C2"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.Win32@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "name": "Avalonia.X11",
+      "versionInfo": "11.3.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "EEBA7DF3C0B3A7B8E828B0A2C789E730F795038FB0C44A19A8D2D3844A7E9F5BF4568157069542FCC5F3890EE8061FABADDFED7BF1CA68CFE0AA683EB131FCBE"
+        }
+      ],
+      "copyrightText": "Copyright 2013-2025 © The AvaloniaUI Project",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Avalonia.X11@11.3.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "name": "Docker.DotNet",
+      "versionInfo": "3.125.15",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "F65555FDE774F5F4660F6D67DE52CC2E0256C467FD743B63E290E8BB066291D3021E8AD9B5BEB92ADA5D5FF2F6703E314681010E155CF01F425945C4AAA94BA6"
+        }
+      ],
+      "copyrightText": "Copyright (c) .NET Foundation and Contributors",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Docker.DotNet@3.125.15"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-FluentIcons.Avalonia-7e20b005-3787-4105-a4aa-1a9f39b77d1b",
+      "name": "FluentIcons.Avalonia",
+      "versionInfo": "1.1.303",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "574D4037CCD9269446A6C9EECF3A62B2B75FC270BF55844A1872E2E8411B3AFADA3BA879161A3168BCE6950699F2BBF2144183030BB2F3B8B7A21B8A518A12FE"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/FluentIcons.Avalonia@1.1.303"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-FluentIcons.Common-f819dcb5-ee17-4426-af4e-29b0c94393dd",
+      "name": "FluentIcons.Common",
+      "versionInfo": "1.1.303",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "0A959B0FD827DF472D5149A4294102E5EFCB6585CE67BAD2266ACE268AF62D61835D78F42AD7B0AF9EF86CBF819E64DD8A85B95850AA5781F5D57F2ACB8E0C16"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/FluentIcons.Common@1.1.303"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "name": "HarfBuzzSharp",
+      "versionInfo": "8.3.1.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "ED1D94447956FA595C4867FE3EEB4A7B67C97E00E0DA5A72762362212CBF25E62BE5936E59617C94A1CBD4E6BBD0AC902854D0D36866BD920ED6A85AE663AC8C"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/HarfBuzzSharp@8.3.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-df27e068-5b93-491c-a016-8bda4e5c8174",
+      "name": "HarfBuzzSharp.NativeAssets.Linux",
+      "versionInfo": "8.3.1.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "4DBFFEB5D07C377B5F6D7D54A658C6E272FA786869C4E6A6FDBF8BBF85F89D01A606DDFE240592F36DDD37807470F0546BBC7DE9A6EB0508DA15E91D14A95617"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/HarfBuzzSharp.NativeAssets.Linux@8.3.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-e40c1e2e-26bb-4186-a2a5-27085ee1e125",
+      "name": "HarfBuzzSharp.NativeAssets.macOS",
+      "versionInfo": "8.3.1.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "063155862A999D07C01E4DF3B2DF2D23AA320C25EE62509B0BDE657EC8797E0C6FE95FE4B29E9F6B2E9A0120DC76DF431C547F7BAF9FAA19936C5A9EB78DA2E6"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-306b2b7c-d7d6-49c6-87eb-3fc4ff5a71d3",
+      "name": "HarfBuzzSharp.NativeAssets.WebAssembly",
+      "versionInfo": "8.3.1.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "746D52BF1820D897211982B466D274477DC2E698A97827CB6DC5303B2355AD9EC7929902D484BE205282BEC2EBAAD2824952D7096AE3B03C4A9BE5EE8384D9DB"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/HarfBuzzSharp.NativeAssets.WebAssembly@8.3.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-1a366322-9ef7-4142-b9fa-c576e9f3945e",
+      "name": "HarfBuzzSharp.NativeAssets.Win32",
+      "versionInfo": "8.3.1.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5BF6504C34F9040445D6F88D975896B289CB622B4DE109761E721CB83E8D3301686EEDD6A67A9DD5E4742FEBA6D5ED1D106932372F43159926712AD6F1E02AF3"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-MicroCom.Runtime-d68a3e04-f17a-4f01-b55b-2858af54d6a3",
+      "name": "MicroCom.Runtime",
+      "versionInfo": "0.11.0",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "C00731176E34EA7B936AD58A38639843C790B027B714ED5D3EA828B85EA94B14A502DED52CA7F60BB10C0AC0E744BD6E62FDCCE0108EBAAF9731C408EECE031E"
+        }
+      ],
+      "copyrightText": "Copyright 2021 © Nikita Tsukanov",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/MicroCom.Runtime@0.11.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Newtonsoft.Json-c9440c7d-f807-4b3e-b72f-1d39604ec5b3",
+      "name": "Newtonsoft.Json",
+      "versionInfo": "13.0.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "83731B662EAF05379A23F8446EF47BBC111349DD4358B7BD8B51383FE9CF637E2FE62F78CEA52A0D7BDD582DC6FBBB5837D4A7B1D53DCF37A0AE7473E21EE7B1"
+        }
+      ],
+      "copyrightText": "Copyright © James Newton-King 2008",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Newtonsoft.Json@13.0.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "name": "SkiaSharp",
+      "versionInfo": "2.88.9",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "3A2FFA5E05F45CDB80E6735EE947E91E08FF145FC50C7882E75D44B6AE0C2CD733420D15B6A4274A186B3A79D463A1273E27FF7FD79A51D0937251EBB6EF761D"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/SkiaSharp@2.88.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.Linux-5f2285cd-fcff-4afc-a34c-b2bfb6b4d049",
+      "name": "SkiaSharp.NativeAssets.Linux",
+      "versionInfo": "2.88.9",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "5C6A3E93A18E70E6ADCD548BD2F76FA311114346CE4D812E520F250D33342D5AD8D05EA285433BD15CB19BBC48D9BBF2EF7D1F1725DD71705ACCEFABA3F46892"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/SkiaSharp.NativeAssets.Linux@2.88.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.macOS-b2cbb8a4-1fd1-44e4-ae81-13d628b7d821",
+      "name": "SkiaSharp.NativeAssets.macOS",
+      "versionInfo": "2.88.9",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "74CFB865746F2911935290BFB92469B331E50415D5ABEDA87598EBDB4049C52AF84A5DAEDA41EBCB0BBAEC6A7DEBB42D83CDC6C9F61CEA55D43C720A78C3EBCE"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/SkiaSharp.NativeAssets.macOS@2.88.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-86fa0da1-0f4f-49c5-af1a-ef7fc00789b4",
+      "name": "SkiaSharp.NativeAssets.WebAssembly",
+      "versionInfo": "2.88.9",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "C1815D86904C25E1BC3E43B22CC4B2DB0EC931C13DD4D9505A2B6CB0CA1D24329F725BCE650AF1B0DC12BC70D8352CC19F2AC452AAB462E7AF4787D4601E0E0A"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/SkiaSharp.NativeAssets.WebAssembly@2.88.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-SkiaSharp.NativeAssets.Win32-a3fc71b8-379c-434a-800e-c89debdf1b41",
+      "name": "SkiaSharp.NativeAssets.Win32",
+      "versionInfo": "2.88.9",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "D18BD8194041C7FFB79302D4F1BE584E8C024E88B12CB4669A738CAE551DA3D3E3924087BB0AA42D34A9003CFB35037D73637894E67D02223D100A1B4215EEEC"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-System.Buffers-3c2e6b39-80df-4b1f-8dcf-624f0129c136",
+      "name": "System.Buffers",
+      "versionInfo": "4.5.1",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "80DA6158E55B9BCF7E0B5E6379B9CF45A632914F037B53C5BF5609576E3CD7821F7861956B73D74470D2D0C2E56DD235A5EF4CA6FFE7E192B820DC2D023AAFF2"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/System.Buffers@4.5.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-System.IO.Pipelines-5d41d3ad-6465-427c-9416-f8cc808a5d82",
+      "name": "System.IO.Pipelines",
+      "versionInfo": "8.0.0",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "57EB6A11E84F40A48B57B1DC5786A01AA9852122B7D15363490D8A12C9A458BF99A8DDF4C0C0247BE98559C2B42E769A10BDA2C5A9817735484D960DC652EB12"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/System.IO.Pipelines@8.0.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-System.Threading.Tasks.Extensions-a7ca23e4-40f3-48b7-8421-150d795d23f5",
+      "name": "System.Threading.Tasks.Extensions",
+      "versionInfo": "4.5.4",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "68052086E77D3C7198737A3DA163D67740B7C44F93250C39659B3BF21B6547A9ABF64CBF40481F5C78F24361AF3AAF47D52D188B371554A0928A7F7665C1FC14"
+        }
+      ],
+      "copyrightText": "© Microsoft Corporation. All rights reserved.",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Tmds.DBus.Protocol-1aa815a3-60c6-4689-8f5a-3ca278f67dfe",
+      "name": "Tmds.DBus.Protocol",
+      "versionInfo": "0.21.2",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "01E55DAD6B1B3060CF3022727231DB50AE1272F8D71112783F9213FE1ADC930CD8EE60227F7B5569711287858086A9E882BEDA137EBD08C279FDA23C89AF25F2"
+        }
+      ],
+      "copyrightText": "Tom Deseyn",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:nuget/Tmds.DBus.Protocol@0.21.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Unknown-4f2c646e-85db-4342-9553-76be495c33b6",
+      "name": "Unknown",
+      "versionInfo": "0.0.0",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Gantry-68a307b4-4c21-4b1d-ad84-57db22b905a2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Unknown-4f2c646e-85db-4342-9553-76be495c33b6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.BuildServices-40d378bb-8f62-47bc-8751-7331b215f279",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-70e7894f-bd58-4120-8d64-5a1ec128a1f2",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relatedSpdxElement": "SPDXRef-MicroCom.Runtime-d68a3e04-f17a-4f01-b55b-2858af54d6a3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-70e7894f-bd58-4120-8d64-5a1ec128a1f2",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Controls.DataGrid-97909c03-c6b2-4cfc-9f95-fa1655f76399",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Native-d9be928e-9689-4b23-b3bd-60c8923ec320",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Themes.Simple-85e965dc-c3bd-4b16-8179-c4634f60e0a6",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Fonts.Inter-7ef9c336-7716-4cc9-96c1-119633b7c0fe",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "relatedSpdxElement": "SPDXRef-Tmds.DBus.Protocol-1aa815a3-60c6-4689-8f5a-3ca278f67dfe",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Native-d9be928e-9689-4b23-b3bd-60c8923ec320",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-df27e068-5b93-491c-a016-8bda4e5c8174",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-306b2b7c-d7d6-49c6-87eb-3fc4ff5a71d3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Linux-5f2285cd-fcff-4afc-a34c-b2bfb6b4d049",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-86fa0da1-0f4f-49c5-af1a-ef7fc00789b4",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Themes.Fluent-2bd4ae91-3230-4185-aed8-d9617c960ea9",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Themes.Simple-85e965dc-c3bd-4b16-8179-c4634f60e0a6",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Angle.Windows.Natives-aca4db50-7016-472d-860e-f698ed51d4de",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "relatedSpdxElement": "SPDXRef-Newtonsoft.Json-c9440c7d-f807-4b3e-b72f-1d39604ec5b3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "relatedSpdxElement": "SPDXRef-System.Buffers-3c2e6b39-80df-4b1f-8dcf-624f0129c136",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "relatedSpdxElement": "SPDXRef-System.Threading.Tasks.Extensions-a7ca23e4-40f3-48b7-8421-150d795d23f5",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-7e20b005-3787-4105-a4aa-1a9f39b77d1b",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-7e20b005-3787-4105-a4aa-1a9f39b77d1b",
+      "relatedSpdxElement": "SPDXRef-FluentIcons.Common-f819dcb5-ee17-4426-af4e-29b0c94393dd",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-1a366322-9ef7-4142-b9fa-c576e9f3945e",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-e40c1e2e-26bb-4186-a2a5-27085ee1e125",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Win32-a3fc71b8-379c-434a-800e-c89debdf1b41",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.macOS-b2cbb8a4-1fd1-44e4-ae81-13d628b7d821",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp.NativeAssets.Linux-5f2285cd-fcff-4afc-a34c-b2bfb6b4d049",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Tmds.DBus.Protocol-1aa815a3-60c6-4689-8f5a-3ca278f67dfe",
+      "relatedSpdxElement": "SPDXRef-System.IO.Pipelines-5d41d3ad-6465-427c-9416-f8cc808a5d82",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.BuildServices-40d378bb-8f62-47bc-8751-7331b215f279",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-70e7894f-bd58-4120-8d64-5a1ec128a1f2",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relatedSpdxElement": "SPDXRef-MicroCom.Runtime-d68a3e04-f17a-4f01-b55b-2858af54d6a3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Remote.Protocol-70e7894f-bd58-4120-8d64-5a1ec128a1f2",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Controls.DataGrid-97909c03-c6b2-4cfc-9f95-fa1655f76399",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Native-d9be928e-9689-4b23-b3bd-60c8923ec320",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Desktop-479e5f52-af69-434d-abb3-c181d6111124",
+      "relatedSpdxElement": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Native-d9be928e-9689-4b23-b3bd-60c8923ec320",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Linux-df27e068-5b93-491c-a016-8bda4e5c8174",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.WebAssembly-306b2b7c-d7d6-49c6-87eb-3fc4ff5a71d3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Linux-5f2285cd-fcff-4afc-a34c-b2bfb6b4d049",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.WebAssembly-86fa0da1-0f4f-49c5-af1a-ef7fc00789b4",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Win32-3af74f83-64dc-49a0-be0e-d17c18b963e3",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Angle.Windows.Natives-aca4db50-7016-472d-860e-f698ed51d4de",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.X11-0c48ca52-2e19-42d3-a471-8cd1e1c669bf",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Skia-e90677af-a101-43bc-a16f-21121afceebf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Controls.ColorPicker-c74b258f-e6e0-4de6-8e78-2d60776642a5",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Diagnostics-c2efa90a-5027-4397-b453-1b48d4ae4ece",
+      "relatedSpdxElement": "SPDXRef-Avalonia.Themes.Simple-85e965dc-c3bd-4b16-8179-c4634f60e0a6",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Themes.Simple-85e965dc-c3bd-4b16-8179-c4634f60e0a6",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Fonts.Inter-7ef9c336-7716-4cc9-96c1-119633b7c0fe",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.FreeDesktop-7e69170e-bbcf-4e36-a8eb-19b614967f0a",
+      "relatedSpdxElement": "SPDXRef-Tmds.DBus.Protocol-1aa815a3-60c6-4689-8f5a-3ca278f67dfe",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Tmds.DBus.Protocol-1aa815a3-60c6-4689-8f5a-3ca278f67dfe",
+      "relatedSpdxElement": "SPDXRef-System.IO.Pipelines-5d41d3ad-6465-427c-9416-f8cc808a5d82",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.Win32-1a366322-9ef7-4142-b9fa-c576e9f3945e",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-HarfBuzzSharp-095e040e-e80d-4ccc-80a6-26eebeef66ef",
+      "relatedSpdxElement": "SPDXRef-HarfBuzzSharp.NativeAssets.macOS-e40c1e2e-26bb-4186-a2a5-27085ee1e125",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.Win32-a3fc71b8-379c-434a-800e-c89debdf1b41",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp.NativeAssets.macOS-b2cbb8a4-1fd1-44e4-ae81-13d628b7d821",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-SkiaSharp.NativeAssets.Linux-5f2285cd-fcff-4afc-a34c-b2bfb6b4d049",
+      "relatedSpdxElement": "SPDXRef-SkiaSharp-f1914b74-b2ec-45e8-9870-cfc3537f57de",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Avalonia.Themes.Fluent-2bd4ae91-3230-4185-aed8-d9617c960ea9",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "relatedSpdxElement": "SPDXRef-Newtonsoft.Json-c9440c7d-f807-4b3e-b72f-1d39604ec5b3",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "relatedSpdxElement": "SPDXRef-System.Buffers-3c2e6b39-80df-4b1f-8dcf-624f0129c136",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Docker.DotNet-fd265e1d-6309-4cc6-a81e-54beee76c53a",
+      "relatedSpdxElement": "SPDXRef-System.Threading.Tasks.Extensions-a7ca23e4-40f3-48b7-8421-150d795d23f5",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-7e20b005-3787-4105-a4aa-1a9f39b77d1b",
+      "relatedSpdxElement": "SPDXRef-Avalonia-ff497e08-9714-498a-96d6-09da6fe122cf",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-FluentIcons.Avalonia-7e20b005-3787-4105-a4aa-1a9f39b77d1b",
+      "relatedSpdxElement": "SPDXRef-FluentIcons.Common-f819dcb5-ee17-4426-af4e-29b0c94393dd",
+      "relationshipType": "DEPENDS_ON"
+    }
+  ]
+}

@@ -29,7 +29,12 @@
     <AvaloniaResource Include="gantry.jpeg" />
     <None Remove="gantry.ico" />
     <AvaloniaResource Include="gantry.ico" />
-    <None Include="../LICENSE.md" CopyToPublishDirectory="Always" />
+    <None Include="../LICENSE.md" CopyToPublishDirectory="Always" CopyToOutputDirectory="Always" />
     <None Include="../gantry.png" CopyToPublishDirectory="Always" />
+    <None Include="../sbom.json" CopyToPublishDirectory="Always" />
+    <None Include="../sbom.html" CopyToPublishDirectory="Always" />
+    <None Include="../sbom.spdx.json" CopyToPublishDirectory="Always" />
+    <None Include="../sbom.cdx.xml" CopyToPublishDirectory="Always" />
   </ItemGroup>
+  
 </Project>

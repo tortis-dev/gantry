@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "covenant": {
+      "version": "0.24.0",
+      "commands": [
+        "dotnet-covenant"
+      ],
+      "rollForward": false
+    }
+  }
+}
