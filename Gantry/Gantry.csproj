@@ -29,5 +29,7 @@
     <AvaloniaResource Include="gantry.jpeg" />
     <None Remove="gantry.ico" />
     <AvaloniaResource Include="gantry.ico" />
+    <None Include="../LICENSE.md" CopyToPublishDirectory="Always" />
+    <None Include="../gantry.png" CopyToPublishDirectory="Always" />
   </ItemGroup>
 </Project>
