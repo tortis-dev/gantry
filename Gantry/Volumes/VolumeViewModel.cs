@@ -16,7 +16,7 @@ class VolumeViewModel : ObservableObject
 
     async Task LoadVolumeList()
     {
-        var client = new DockerClientFactory().Create();
+        var client = DockerClientFactory.Create();
         var volumeList = await client.Volumes.ListAsync();
 
         foreach (var volume in volumeList.Volumes)
@@ -56,7 +56,7 @@ class RemoveVolumeCommand : ICommand
     {
         try
         {
-            using var client = new DockerClientFactory().Create();
+            using var client = DockerClientFactory.Create();
             await client.Volumes.RemoveAsync(name);
         }
         catch (Exception e)

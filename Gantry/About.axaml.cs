@@ -15,7 +15,7 @@ public partial class About : Window
 
     public string License => File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"LICENSE.md"));
 
-    public string DockerContext => $"Docker Context: {new DockerClientFactory().Create().Configuration.EndpointBaseUri.ToString()}";
+    public string DockerContext => $"Docker Context: {DockerClientFactory.Configuration.EndpointBaseUri.ToString()}";
 
     public Uri Sbom => new Uri($"file://{Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"sbom.html")}");
 }

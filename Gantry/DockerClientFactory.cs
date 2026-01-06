@@ -3,12 +3,11 @@ using System;
 
 namespace Gantry;
 
-public class DockerClientFactory
+public static class DockerClientFactory
 {
-    static Lazy<IDockerClient> _instance = new Lazy<IDockerClient>(() => new DockerClientConfiguration().CreateClient());
+    static Lazy<DockerClientConfiguration> _config = new Lazy<DockerClientConfiguration>(() => new DockerClientConfiguration());
+    static Lazy<IDockerClient> _instance = new Lazy<IDockerClient>(() => _config.Value.CreateClient());
 
-    public IDockerClient Create()
-    {
-        return _instance.Value;
-    }
+    public static IDockerClient Create() => _instance.Value;
+    public static DockerClientConfiguration Configuration => _config.Value;
 }

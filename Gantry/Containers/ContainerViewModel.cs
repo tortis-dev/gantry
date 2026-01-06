@@ -50,7 +50,7 @@ class ContainerViewModel : ObservableObject
 
     async Task LoadContainerList()
     {
-        var client = new DockerClientFactory().Create();
+        var client = DockerClientFactory.Create();
         IList<ContainerListResponse> containerList = await client.Containers.ListContainersAsync(new ContainersListParameters {All = true} );
         foreach (var response in containerList)
         {
@@ -96,7 +96,7 @@ class ContainerViewModel : ObservableObject
         _logStreamCts = new CancellationTokenSource();
         var containerId = SelectedContainer.Id;
 
-        var client = new DockerClientFactory().Create();
+        var client = DockerClientFactory.Create();
         var logParams = new ContainerLogsParameters
         {
             ShowStdout = true, ShowStderr = true, Follow = true, Timestamps = true, Tail = "10000"
@@ -214,7 +214,7 @@ class StopContainerCommand : ICommand
     {
         try
         {
-            var client = new DockerClientFactory().Create();
+            var client = DockerClientFactory.Create();
             var result = await client.Containers.StopContainerAsync(id, new ContainerStopParameters());
             if (result)
             {
@@ -267,7 +267,7 @@ class StartContainerCommand : ICommand
     {
         try
         {
-            var client = new DockerClientFactory().Create();
+            var client = DockerClientFactory.Create();
             var result = await client.Containers.StartContainerAsync(id, new ContainerStartParameters());
             if (result)
             {
@@ -320,7 +320,7 @@ class RemoveContainerCommand : ICommand
     {
         try
         {
-            var client = new DockerClientFactory().Create();
+            var client = DockerClientFactory.Create();
             await client.Containers.RemoveContainerAsync(id, new ContainerRemoveParameters());
             var container = _viewModel.Containers.First(c => c.Id == id);
             _viewModel.Containers.Remove(container);
