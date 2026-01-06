@@ -17,9 +17,9 @@
       </properties>
     </component>
     <properties>
-      <property name="timestamp">2026-01-06T19:49:17.8862068Z</property>
-      <property name="components">36</property>
-      <property name="dependencies">19</property>
+      <property name="timestamp">2026-01-06T21:33:47.8960026Z</property>
+      <property name="components">39</property>
+      <property name="dependencies">21</property>
       <property name="groups">Gantry.sln</property>
     </properties>
   </metadata>
@@ -399,6 +399,48 @@
       </licenses>
       <purl>pkg:nuget/Newtonsoft.Json@13.0.1</purl>
     </component>
+    <component type="library" bom-ref="pkg:nuget/Serilog@4.3.0">
+      <name>Serilog</name>
+      <version>4.3.0</version>
+      <hashes>
+        <hash alg="SHA3-512">8F647FE61DE431B0A0D40A7F90CCEB950A3C2A9878422E0F5721186009B79210A80B3035E78061C935B2FA01A8865560B449314A2F51E352D3D96C30EF2B2CC2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://licenses.nuget.org/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Serilog@4.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Serilog.Sinks.Async@2.1.0">
+      <name>Serilog.Sinks.Async</name>
+      <version>2.1.0</version>
+      <hashes>
+        <hash alg="SHA3-512">04C6181F987CF459D96FFAFCA2A7CB7D5BEF0F5B079277DEB5AC009D238929FF8B075B2E73504330505462D76652CE106966DD3A0407C8799BFE5D0BEC7F0FDD</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://licenses.nuget.org/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Serilog.Sinks.Async@2.1.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Serilog.Sinks.File@7.0.0">
+      <name>Serilog.Sinks.File</name>
+      <version>7.0.0</version>
+      <hashes>
+        <hash alg="SHA3-512">6081F48413E3C04B47DF1737AF1B6B1D21DCB2D60C1FE7A866DA6C14D702C50995FED33EA07058E975E5B925269E675DC340BD20A3A2A167B05E14EAD43F5419</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://licenses.nuget.org/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Serilog.Sinks.File@7.0.0</purl>
+    </component>
     <component type="library" bom-ref="pkg:nuget/SkiaSharp@2.88.9">
       <name>SkiaSharp</name>
       <version>2.88.9</version>
@@ -597,6 +639,12 @@
     <dependency ref="pkg:nuget/HarfBuzzSharp@8.3.1.1">
       <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.Win32@8.3.1.1" />
       <dependency ref="pkg:nuget/HarfBuzzSharp.NativeAssets.macOS@8.3.1.1" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Sinks.Async@2.1.0">
+      <dependency ref="pkg:nuget/Serilog@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Sinks.File@7.0.0">
+      <dependency ref="pkg:nuget/Serilog@4.3.0" />
     </dependency>
     <dependency ref="pkg:nuget/SkiaSharp@2.88.9">
       <dependency ref="pkg:nuget/SkiaSharp.NativeAssets.Win32@2.88.9" />

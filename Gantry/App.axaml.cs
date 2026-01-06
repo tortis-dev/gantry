@@ -13,6 +13,7 @@ public partial class App : Application
 
     public override void OnFrameworkInitializationCompleted()
     {
+        Avalonia.Logging.Logger.Sink = new SerilogSink();
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             desktop.MainWindow = new MainWindow();

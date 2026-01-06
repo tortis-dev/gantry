@@ -1,3 +1,4 @@
+using Serilog;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
@@ -61,7 +62,7 @@ class RemoveVolumeCommand : ICommand
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Log.Error(e, "Error removing volume.");
         }
     }
 }

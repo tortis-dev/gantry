@@ -20,6 +20,7 @@ tar -czf dist/gantry-$version-linux-x64.tar.gz dist/linux/* || exit 1
 
 # Apt Package
 mkdir -p package/deb/usr/local/bin/gantry || exit 1
+mkdir -p package/deb/var/log/gantry || exit 1
 cp dist/linux/* package/deb/usr/local/bin/gantry || exit 1
 
 chmod +x package/deb/usr/local/bin/gantry/Gantry || exit 1

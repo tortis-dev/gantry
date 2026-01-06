@@ -1,4 +1,5 @@
 using Docker.DotNet.Models;
+using Serilog;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -60,7 +61,7 @@ class RemoveImageCommand : ICommand
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Log.Error(e, "Error removing image.");
         }
     }
 }

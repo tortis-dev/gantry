@@ -1,5 +1,6 @@
 using Docker.DotNet;
 using Docker.DotNet.Models;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -230,7 +231,7 @@ class StopContainerCommand : ICommand
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Log.Error(e, "Error stopping container");
         }
     }
 }
@@ -283,7 +284,7 @@ class StartContainerCommand : ICommand
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Log.Error(e, "Error starting container");
         }
     }
 }
@@ -327,7 +328,7 @@ class RemoveContainerCommand : ICommand
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Log.Error(e, "Error removing container");
         }
     }
 }
