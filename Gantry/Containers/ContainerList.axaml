@@ -94,6 +94,53 @@
                          ScrollViewer.VerticalScrollBarVisibility="Auto" />
             </TabItem>
 
+            <TabItem Header="Terminal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Terminal Output Display -->
+                    <TextBox Grid.Row="0"
+                             x:Name="TerminalOutputBox"
+                             Margin="5"
+                             Text="{Binding TerminalOutput}"
+                             IsReadOnly="True"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"
+                             FontFamily="Consolas,Courier New,monospace"
+                             Background="#0C0C0C"
+                             Foreground="#CCCCCC"
+                             BorderThickness="0"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto" />
+
+                    <!-- Input Area -->
+                    <Grid Grid.Row="1" Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="0"
+                                 x:Name="TerminalInputBox"
+                                 Watermark="Enter command..."
+                                 FontFamily="Consolas,Courier New,monospace"
+                                 Background="#0C0C0C"
+                                 Foreground="#CCCCCC"
+                                 IsEnabled="{Binding IsTerminalActive}"
+                                 KeyDown="TerminalInputBox_OnKeyDown" />
+
+                        <Button Grid.Column="1"
+                                Content="Send"
+                                Margin="5,0,0,0"
+                                Padding="10,5"
+                                Command="{Binding SendTerminalInputCommand}"
+                                CommandParameter="{Binding #TerminalInputBox.Text}" />
+                    </Grid>
+                </Grid>
+            </TabItem>
+
         </TabControl>
     </Grid>
 </UserControl>
