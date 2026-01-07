@@ -81,6 +81,19 @@
                              ScrollViewer.VerticalScrollBarVisibility="Auto" />
                 </Grid>
             </TabItem>
+
+            <TabItem Header="Inspect">
+                <TextBox Margin="5"
+                         Text="{Binding InspectJson}"
+                         IsReadOnly="True"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True"
+                         FontFamily="Consolas,Courier New,monospace"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         ScrollViewer.VerticalScrollBarVisibility="Auto" />
+            </TabItem>
+
         </TabControl>
     </Grid>
 </UserControl>

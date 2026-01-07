@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -17,6 +18,7 @@ class ContainerViewModel : ObservableObject
     private const int MaxLogLines = 10000;
     private ContainerListItem? _selectedContainer;
     private string _logs = string.Empty;
+    private string _inspectJson = string.Empty;
     private CancellationTokenSource? _logStreamCts;
     private List<string> _logLines = [];
 
@@ -39,6 +41,7 @@ class ContainerViewModel : ObservableObject
             if (SetField(ref _selectedContainer, value))
             {
                 _ = StartLogStream();
+                _ = LoadInspectData();
             }
         }
     }
@@ -47,6 +50,12 @@ class ContainerViewModel : ObservableObject
     {
         get => _logs;
         set => SetField(ref _logs, value);
+    }
+
+    public string InspectJson
+    {
+        get => _inspectJson;
+        set => SetField(ref _inspectJson, value);
     }
 
     async Task LoadContainerList()
@@ -180,6 +189,32 @@ class ContainerViewModel : ObservableObject
     {
         _logLines.Clear();
         Logs = string.Empty;
+    }
+
+    async Task LoadInspectData()
+    {
+        InspectJson = string.Empty;
+
+        if (SelectedContainer == null)
+            return;
+
+        try
+        {
+            var client = DockerClientFactory.Create();
+            var response = await client.Containers.InspectContainerAsync(SelectedContainer.Id);
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+
+            InspectJson = JsonSerializer.Serialize(response, options);
+        }
+        catch (Exception e)
+        {
+            InspectJson = $"Error loading inspect data: {e.Message}";
+            Log.Error(e, "Error loading inspect data");
+        }
     }
 }
 
