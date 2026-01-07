@@ -23,14 +23,16 @@ class ImageViewModel : ObservableObject
     {
         var client = DockerClientFactory.Create();
         var imageList = await client.Images.ListImagesAsync(new ImagesListParameters());
-        var containerList = await client.Containers.ListContainersAsync(new ContainersListParameters {All = true});
         foreach (var image in imageList)
         {
             var item = new ImageListItem(
                 id: image.ID,
                 size: image.Size,
-                containersCount: containerList.Where(c => c.ImageID == image.ID).LongCount());
-            item.SetRepositoryAndTag(image.RepoTags);
+                containersCount: image.Containers);
+            if (image.RepoTags is not null && image.RepoTags.Any())
+                item.SetRepositoryAndTag(image.RepoTags);
+            else
+                item.SetRepositoryAndTag(["<none>:<none>"]);
             Images.Add(item);
         }
     }
