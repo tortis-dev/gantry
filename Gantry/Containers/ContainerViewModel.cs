@@ -22,12 +22,27 @@ class ContainerViewModel : ObservableObject
     private CancellationTokenSource? _logStreamCts;
     private List<string> _logLines = [];
 
+    // Terminal-related fields
+    private string _terminalOutput = string.Empty;
+    private bool _isTerminalActive = false;
+    private CancellationTokenSource? _terminalStreamCts;
+    private MultiplexedStream? _terminalStream;
+    private string? _detectedShell;
+    private static readonly string[] ShellCandidates = new[]
+    {
+        "/bin/bash",
+        "/bin/sh",
+        "/bin/ash",
+        "/bin/zsh"
+    };
+
     public ContainerViewModel()
     {
         StartContainerCommand = new(this);
         StopContainerCommand = new(this);
         RemoveContainerCommand = new(this);
         ClearLogsCommand = new(this);
+        SendTerminalInputCommand = new(this);
 
         _ = LoadContainerList();
     }
@@ -42,6 +57,7 @@ class ContainerViewModel : ObservableObject
             {
                 _ = StartLogStream();
                 _ = LoadInspectData();
+                _ = StartTerminalSession();
             }
         }
     }
@@ -56,6 +72,18 @@ class ContainerViewModel : ObservableObject
     {
         get => _inspectJson;
         set => SetField(ref _inspectJson, value);
+    }
+
+    public string TerminalOutput
+    {
+        get => _terminalOutput;
+        set => SetField(ref _terminalOutput, value);
+    }
+
+    public bool IsTerminalActive
+    {
+        get => _isTerminalActive;
+        set => SetField(ref _isTerminalActive, value);
     }
 
     async Task LoadContainerList()
@@ -83,12 +111,21 @@ class ContainerViewModel : ObservableObject
     public StartContainerCommand StartContainerCommand { get; }
     public RemoveContainerCommand RemoveContainerCommand { get; }
     public ClearLogsCommand ClearLogsCommand { get; }
+    public SendTerminalInputCommand SendTerminalInputCommand { get; }
 
     public void ContainerStateChanged(ContainerListItem container)
     {
         StopContainerCommand.RaiseCanExecuteChanged();
         StartContainerCommand.RaiseCanExecuteChanged();
         RemoveContainerCommand.RaiseCanExecuteChanged();
+
+        // If selected container stopped, deactivate terminal
+        if (SelectedContainer?.Id == container.Id && container.State != "running")
+        {
+            _terminalStreamCts?.Cancel();
+            IsTerminalActive = false;
+            TerminalOutput += "\n[Container stopped - terminal disconnected]\n";
+        }
     }
 
     async Task StartLogStream()
@@ -214,6 +251,165 @@ class ContainerViewModel : ObservableObject
         {
             InspectJson = $"Error loading inspect data: {e.Message}";
             Log.Error(e, "Error loading inspect data");
+        }
+    }
+
+    async Task StartTerminalSession()
+    {
+        // Cancel any existing terminal session
+        _terminalStreamCts?.Cancel();
+        _terminalStreamCts?.Dispose();
+        _terminalStream?.Dispose();
+
+        TerminalOutput = string.Empty;
+        IsTerminalActive = false;
+
+        if (SelectedContainer == null || SelectedContainer.State != "running")
+        {
+            if (SelectedContainer != null && SelectedContainer.State != "running")
+            {
+                TerminalOutput = "Terminal is only available for running containers.\n";
+            }
+            return;
+        }
+
+        try
+        {
+            _terminalStreamCts = new CancellationTokenSource();
+            var client = DockerClientFactory.Create();
+
+            // Detect available shell
+            _detectedShell = await DetectShellAsync(SelectedContainer.Id, _terminalStreamCts.Token);
+
+            if (_detectedShell == null)
+            {
+                TerminalOutput = "No shell detected in container. Tried: bash, sh, ash, zsh\n";
+                return;
+            }
+
+            // Create exec instance
+            var execCreateResponse = await client.Exec.ExecCreateContainerAsync(
+                SelectedContainer.Id,
+                new ContainerExecCreateParameters
+                {
+                    AttachStdin = true,
+                    AttachStdout = true,
+                    AttachStderr = true,
+                    Tty = true,
+                    Cmd = new[] { _detectedShell }
+                }
+            );
+
+            // Start and attach to exec session
+            _terminalStream = await client.Exec.StartAndAttachContainerExecAsync(
+                execCreateResponse.ID,
+                false,
+                _terminalStreamCts.Token
+            );
+
+            IsTerminalActive = true;
+            TerminalOutput = $"Connected to {_detectedShell}\n";
+
+            // Start output reader task
+            _ = ReadTerminalOutputAsync();
+        }
+        catch (OperationCanceledException)
+        {
+            // Expected when canceling
+        }
+        catch (Exception e)
+        {
+            TerminalOutput = $"Error starting terminal: {e.Message}\n";
+            Log.Error(e, "Error starting terminal session");
+            IsTerminalActive = false;
+        }
+    }
+
+    async Task<string?> DetectShellAsync(string containerId, CancellationToken ct)
+    {
+        var client = DockerClientFactory.Create();
+
+        foreach (var shell in ShellCandidates)
+        {
+            try
+            {
+                // Try to create a test exec to see if shell exists
+                var testExec = await client.Exec.ExecCreateContainerAsync(
+                    containerId,
+                    new ContainerExecCreateParameters
+                    {
+                        AttachStdout = true,
+                        Cmd = new[] { "test", "-x", shell }
+                    },
+                    ct
+                );
+
+                // If we got here without exception, shell likely exists
+                return shell;
+            }
+            catch
+            {
+                // This shell doesn't exist, try next
+                continue;
+            }
+        }
+
+        // Fallback: just try /bin/sh without detection
+        return "/bin/sh";
+    }
+
+    async Task ReadTerminalOutputAsync()
+    {
+        if (_terminalStream == null || _terminalStreamCts == null)
+            return;
+
+        var buffer = new byte[4096];
+
+        try
+        {
+            while (!_terminalStreamCts.Token.IsCancellationRequested)
+            {
+                var result = await _terminalStream.ReadOutputAsync(
+                    buffer, 0, buffer.Length, _terminalStreamCts.Token
+                );
+
+                if (result.EOF)
+                {
+                    TerminalOutput += "\n[Terminal session ended - shell exited]\n";
+                    IsTerminalActive = false;
+                    break;
+                }
+
+                var text = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                TerminalOutput += text;
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            // Expected when canceling
+        }
+        catch (Exception e)
+        {
+            TerminalOutput += $"\n\nError reading terminal output: {e.Message}\n";
+            Log.Error(e, "Error reading terminal output");
+            IsTerminalActive = false;
+        }
+    }
+
+    public async Task SendTerminalInputAsync(string? input)
+    {
+        if (string.IsNullOrEmpty(input) || _terminalStream == null || !IsTerminalActive)
+            return;
+
+        try
+        {
+            var bytes = Encoding.UTF8.GetBytes(input + "\n");
+            await _terminalStream.WriteAsync(bytes, 0, bytes.Length, _terminalStreamCts!.Token);
+        }
+        catch (Exception e)
+        {
+            TerminalOutput += $"\nError sending input: {e.Message}\n";
+            Log.Error(e, "Error sending terminal input");
         }
     }
 }
@@ -388,5 +584,35 @@ class ClearLogsCommand : ICommand
     }
 
     public event EventHandler? CanExecuteChanged;
+}
+
+class SendTerminalInputCommand : ICommand
+{
+    private readonly ContainerViewModel _viewModel;
+
+    public SendTerminalInputCommand(ContainerViewModel viewModel)
+    {
+        _viewModel = viewModel;
+    }
+
+    public bool CanExecute(object? parameter)
+    {
+        return _viewModel.IsTerminalActive && !string.IsNullOrWhiteSpace(parameter as string);
+    }
+
+    public void Execute(object? parameter)
+    {
+        if (parameter is string input)
+        {
+            _ = _viewModel.SendTerminalInputAsync(input);
+        }
+    }
+
+    public event EventHandler? CanExecuteChanged;
+
+    public void RaiseCanExecuteChanged()
+    {
+        CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+    }
 }
 
