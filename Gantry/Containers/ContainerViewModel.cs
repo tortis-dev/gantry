@@ -134,6 +134,8 @@ class ContainerViewModel : ObservableObject
         _logStreamCts?.Cancel();
         _logStreamCts?.Dispose();
 
+        await Task.Delay(100);
+
         Logs = string.Empty;
         _logLines.Clear();
 
@@ -261,21 +263,23 @@ class ContainerViewModel : ObservableObject
         _terminalStreamCts?.Dispose();
         _terminalStream?.Dispose();
 
+        await Task.Delay(100);
+        _terminalStreamCts = new CancellationTokenSource();
+
         TerminalOutput = string.Empty;
         IsTerminalActive = false;
 
-        if (SelectedContainer == null || SelectedContainer.State != "running")
+        if (SelectedContainer is null)
+            return;
+
+        if (SelectedContainer != null && SelectedContainer.State != "running")
         {
-            if (SelectedContainer != null && SelectedContainer.State != "running")
-            {
-                TerminalOutput = "Terminal is only available for running containers.\n";
-            }
+            TerminalOutput = "Terminal is only available for running containers.\n";
             return;
         }
 
         try
         {
-            _terminalStreamCts = new CancellationTokenSource();
             var client = DockerClientFactory.Create();
 
             // Detect available shell
