@@ -16,7 +16,12 @@
         </Grid.RowDefinitions>
 
     <StackPanel Grid.Row="0">
-        <TextBlock Margin="10" FontSize="24">Containers</TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="10" FontSize="24">Containers</TextBlock>
+            <Button Command="{Binding RefreshCommand}">
+                <icons:FluentIcon Icon="ArrowClockwise"/>
+            </Button>
+        </StackPanel>
         <DataGrid x:Name="Grid"
                   SelectionMode="Single"
                   SelectionChanged="Grid_OnSelectionChanged"

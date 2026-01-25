@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=1.2.0
+version=1.3.0
 
 dotnet tool restore || exit 1
 dotnet restore || exit 1

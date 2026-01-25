@@ -43,6 +43,7 @@ class ContainerViewModel : ObservableObject
         RemoveContainerCommand = new(this);
         ClearLogsCommand = new(this);
         SendTerminalInputCommand = new(this);
+        RefreshCommand = new(this);
 
         _ = LoadContainerList();
     }
@@ -86,7 +87,7 @@ class ContainerViewModel : ObservableObject
         set => SetField(ref _isTerminalActive, value);
     }
 
-    async Task LoadContainerList()
+    internal async Task LoadContainerList()
     {
         var client = DockerClientFactory.Create();
         IList<ContainerListResponse> containerList = await client.Containers.ListContainersAsync(new ContainersListParameters {All = true} );
@@ -112,6 +113,7 @@ class ContainerViewModel : ObservableObject
     public RemoveContainerCommand RemoveContainerCommand { get; }
     public ClearLogsCommand ClearLogsCommand { get; }
     public SendTerminalInputCommand SendTerminalInputCommand { get; }
+    public RefreshCommand RefreshCommand { get; }
 
     public void ContainerStateChanged(ContainerListItem container)
     {
@@ -618,5 +620,27 @@ class SendTerminalInputCommand : ICommand
     {
         CanExecuteChanged?.Invoke(this, EventArgs.Empty);
     }
+}
+
+class RefreshCommand : ICommand
+{
+    readonly ContainerViewModel _viewModel;
+    public RefreshCommand(ContainerViewModel viewModel)
+    {
+        _viewModel = viewModel;
+    }
+
+    public bool CanExecute(object? parameter)
+    {
+        return true;
+    }
+
+    public void Execute(object? parameter)
+    {
+        _viewModel.Containers.Clear();
+        _ = _viewModel.LoadContainerList();
+    }
+
+    public event EventHandler? CanExecuteChanged;
 }
 

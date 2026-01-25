@@ -12,14 +12,17 @@ class ImageViewModel : ObservableObject
 {
     public ImageViewModel()
     {
+        RemoveImageCommand = new(this);
+        RefreshCommand = new(this);
         _ = LoadImageList();
     }
 
-    public RemoveImageCommand RemoveImageCommand { get; } = new();
+    public RemoveImageCommand RemoveImageCommand { get; }
+    public RefreshCommand RefreshCommand { get; }
 
     public ObservableCollection<ImageListItem> Images { get; } = [];
 
-    async Task LoadImageList()
+    internal async Task LoadImageList()
     {
         var client = DockerClientFactory.Create();
         var imageList = await client.Images.ListImagesAsync(new ImagesListParameters());
@@ -40,6 +43,13 @@ class ImageViewModel : ObservableObject
 
 class RemoveImageCommand : ICommand
 {
+    readonly ImageViewModel _viewModel;
+
+    public RemoveImageCommand(ImageViewModel viewModel)
+    {
+        _viewModel = viewModel;
+    }
+
     public bool CanExecute(object? parameter)
     {
         return parameter is ImageListItem { ContainersCount: 0 };
@@ -60,6 +70,8 @@ class RemoveImageCommand : ICommand
         {
             var client = DockerClientFactory.Create();
             await client.Images.DeleteImageAsync(id, new ImageDeleteParameters());
+            var image = _viewModel.Images.First(i => i.Id == id);
+            _viewModel.Images.Remove(image);
         }
         catch (Exception e)
         {
@@ -68,3 +80,25 @@ class RemoveImageCommand : ICommand
     }
 }
 
+class RefreshCommand : ICommand
+{
+    readonly ImageViewModel _viewModel;
+
+    public RefreshCommand(ImageViewModel viewModel)
+    {
+        _viewModel = viewModel;
+    }
+
+    public bool CanExecute(object? parameter)
+    {
+        return true;
+    }
+
+    public void Execute(object? parameter)
+    {
+        _viewModel.Images.Clear();
+        _ = _viewModel.LoadImageList();
+    }
+
+    public event EventHandler? CanExecuteChanged;
+}
